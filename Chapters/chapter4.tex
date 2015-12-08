@@ -1,0 +1,463 @@
+\chapter{Large scale relationship between aquatic insect traits and climate}
+\label{chapter4}
+
+Avit Kumar Bhowmik\textsuperscript{a} and Ralf B. Schäfer\textsuperscript{a}\\[.5cm]
+\small
+\textsuperscript{a}Quantitative Landscape Ecology, Institute for Environmental Sciences, University of Koblenz-Landau, Fortstraße 7, 76829 Landau in der Pfalz, Germany\\[1cm]
+
+\medskip
+
+\normalsize
+\noindent Adapted from the article published in 2015 in PLOS ONE\footnote{PLOS ONE is the world's first multidisciplinary open access scientific journal published by the Public Library of Science (PLOS). It covers primary research within science and medicine. The current impact factor of the journal is 3.234 according to the Journal Citation Reports, 2015 (\href{http://wokinfo.com/products_tools/analytical/jcr/#}{http://wokinfo.com/products\textunderscore tools/analytical/jcr/#})}, vol. 10, article ID. e0130025.\\[.5cm]
+
+\renewcommand{\abstractname}{Abstract}
+\begin{abstract}
+Climate is the predominant environmental driver of freshwater assemblage pattern on large spatial scales, and traits of freshwater organisms have shown considerable potential to identify impacts of climate change. Although several studies suggest traits that may indicate vulnerability to climate change, the empirical relationship between freshwater assemblage trait composition and climate has been rarely examined on large scales. We compared the responses of the assumed climate-associated traits from six grouping features to 35 bioclimatic indices (~18 km resolution) for five insect orders (Diptera, Ephemeroptera, Odonata, Plecoptera and Trichoptera), evaluated their potential for changing distribution pattern under future climate change and identified the most influential bioclimatic indices. The data comprised 782 species and 395 genera sampled in 4,752 stream sites during 2006 and 2007 in Germany (~357,000 km² spatial extent). We quantified the variability and spatial autocorrelation in the traits and orders that are associated with the combined and individual bioclimatic indices. Traits of temperature preference grouping feature that are the products of several other underlying climate-associated traits, and the insect order Ephemeroptera exhibited the strongest response to the bioclimatic indices as well as the highest potential for changing distribution pattern. Regarding individual traits, insects in general and ephemeropterans preferring very cold temperature showed the highest response, and the insects preferring cold and trichopterans preferring moderate temperature showed the highest potential for changing distribution. We showed that the seasonal radiation and moisture are the most influential bioclimatic aspects, and thus changes in these aspects may affect the most responsive traits and orders and drive a change in their spatial distribution pattern. Our findings support the development of trait-based metrics to predict and detect climate-related changes of freshwater assemblages.
+\end{abstract}
+
+\newpage
+\thispagestyle{empty}
+
+\vspace*{\fill}
+\begin{quotation}
+  \large\textit{``When you start seeing an area that was all tundra, and now all of a sudden, you see more shrubs or you see the forest encroaching, that is of great importance in terms of hydrology and ecology''}.
+   ---Andrew Slater
+\end{quotation}
+\vspace*{\fill} 
+
+\newpage
+
+\section{Introduction}
+\label{introduction}
+
+Freshwater ecosystems are among the most threatened in terms of biodiversity loss, because of overexploitation, water pollution, invasive species, flow modification and degradation of habitat (Dudgeon et al., 2005; Vörösmarty et al., 2010). While these are mainly local scale stressors, patterns of freshwater assemblages on large spatial scales are driven by environmental variables such as climate, geology and acid deposition (Conti et al., 2013; Vorosmarty, 2000). Climate is the predominant environmental driver that directly affects the thermal and flow regimes of freshwater bodies and thus controls organismal growth and performance (Poff et al., 2010). Moreover, climate may influence the biogeography of organisms and shape geology and acid deposition on large spatial scales (Conti et al., 2013). Thus, quantifying the relationship between climate and large scale freshwater assemblages can help to understand and predict climate change effects on freshwater ecosystems (Parmesan and Yohe, 2003).
+
+Traits of organisms, defined as biological (life history) characteristics and ecological preferences that may evolve from a number of developmental, morphological, physiological and behavioral adaptations of organisms to their environment (Lancaster and Downes, 2010a, 2010b), have shown considerable potential as indicators of multiple stressor effects in freshwater ecosystems (Statzner and Bêche, 2010). Traits were also shown to provide a link to important freshwater ecosystem functions and services (Mlambo, 2014; Vandewalle et al., 2010). Especially on large scales, trait variability is less than the taxonomic variability (Bonada et al., 2007) and therefore traits are more suitable for quantifying the relationship between climate and freshwater assemblage composition.
+
+Several biological and ecological traits of freshwater organisms have been associated with climate change in previous studies. For example, organisms that prefer cold temperature (Durance and Ormerod, 2007) and with low dispersal capacity (Brittain, 2008) exhibited range contractions, large-bodied ($>$ 4 cm) and semivoltine organisms decreased (Lawrence et al., 2010), rheophil and rheobiont organisms declined or disappeared (Floury et al., 2013) and the distribution of organisms with narrow niche breadth, restricted resource distribution and short flight period shrinked (Kotiaho et al., 2005). Consequently, such traits were assumed to be vulnerable and employed to assess risk of individual organism groups, i.e. Ephemeroptera, Plecoptera and Trichoptera (Hering et al., 2009; Hershkovitz et al., 2015; Tierno de Figueroa et al., 2010), sites (streams and lakes) and ecoregions (Conti et al., 2013; Sandin et al., 2014) from climate change. For example, rheobiont and cold temperature preferring organisms were assumed to be threatened by climate change and in concert with additional traits were used to identify potentially vulnerable European ephemeropterans, plecopterans and trichopterans (Hering et al., 2009; Hershkovitz et al., 2015; Tierno de Figueroa et al., 2010). The same hypothesized climate-vulnerable traits and organism groups were used to identify the Swedish streams and lakes (Sandin et al., 2014) and European eco-regions (Conti et al., 2013) that are at the highest risk of adverse climate change effects. However, the large scale relationship between the variability of freshwater assemblage trait composition and climate has rarely been quantified (Heino et al., 2013). Quantification of the trait-climate relationship allows to identify the most vulnerable and tolerant organism groups and their traits as well as to examine whether organism groups or traits differ in their vulnerability to specific aspects of climate change, e.g. change in winter temperature or precipitation (Durance and Ormerod, 2007; Floury et al., 2013; Poff et al., 2010).
+
+Freshwater assemblages are distributed non-randomly along spatial gradients, i.e. longitude, latitude and altitude on large scales, leading to spatial patterns in their trait composition (Peres-Neto and Legendre, 2010). Spatial autocorrelation, referring to the concept that organismal traits observed at a given stream site are more similar to traits in close sites than in distant sites, measures the strength of spatial pattern in the distribution of organismal traits (Bonada et al., 2012). Trait spatial autocorrelation can be endogenous, i.e. arises from ecological processes such as dispersal and reproduction, or exogenous, i.e. induced by environmental drivers like climate (Fortin and Dale, 2005; Peres-Neto and Legendre, 2010). Climate shows a strongly positive autocorrelation, i.e. closer regions have a more similar climate than distant ones. The spatial patterns of freshwater organisms with climate-associated traits often reflect this spatial autocorrelation of climate. For example, a recent study on stream invertebrate taxonomic richness and composition suggested that spatial autocorrelation in organism groups with aerial dispersal ability (e.g. Ephemeroptera, Plecoptera and Trichoptera) is mainly related to large scale climate variability (Bonada et al., 2012). Moreover, organisms preferring cold temperature were shown to predominantly occur in alpine regions with high altitudes, whereas those preferring warm temperature tend to occur in lowland regions (Domisch et al., 2013). Hence, freshwater organisms with climate-associated traits that exhibit strong relationship with climate in their spatial autocorrelation are most likely to change their distribution pattern under future climate change (Dray et al., 2012). However, little is known about the relationship between the spatial pattern in the assumed climate-associated traits and climate on large spatial scales.
+
+We empirically quantified the large scale relationship of the German stream macroinvertebrate assemblage trait composition with climate. Our research questions were two-fold: (i) which of the climate-associated traits and organism groups show the highest response to climate and highest potential for changing distribution pattern under future climate change?, and (ii) which are the most influential climatic aspects for the traits and organism groups showing the highest response and potential for changing distribution? We selected climate-associated traits from six grouping features, i.e. four biological and two ecological grouping features (“grouping feature” and “trait” follow the unified terminologies suggested by (Schmera et al., 2015)) that have been used in previous large scale studies to indicate vulnerability (Conti et al., 2013; Hering et al., 2009; Hershkovitz et al., 2015; Sandin et al., 2014; Tierno de Figueroa et al., 2010) and five orders of stream macroinvertebrates that are aerial dispersers, i.e. aquatic insects (Wikelski et al., 2006). Climate was measured as 35 global bioclimatic indices (BIs) that are biologically and ecologically relevant (Kriticos et al., 2012) and vary considerably over Germany due to its diverse topography (Deutscher Wetterdienst (DW), 2014). The large scale variability and spatial distribution pattern of the aquatic insect assemblage trait composition were quantified and checked for their relationship with the combined and individual BIs.
+
+\section{Materials and methods}
+\label{Materials and methods}
+
+\subsection{Concepts of scale}
+\label{Concepts of scale}
+
+We covered two concepts of spatial scale: (i) spatial extent or size of the study area and (ii) spatial resolution or wavelength of variability of the variables (Fortin and Dale, 2005). Ours is a large scale study from both conceptual points of view, i.e. large extent (Germany, area approximately 357,000 km²) and large (coarse) resolution (approximately 18 km (10 arcminutes) based on the variability of the BIs). We use the terms “large scale” and “scale” for both concepts. When we refer to the scale of Germany, we mean extent; but when we refer to the scale of the relation, e.g. variability and pattern, we mean resolution. Moreover, when we refer to the scale of relationship, we refer to both concepts.
+
+\subsection{Data and processing}
+\label{Data and processing}
+
+\subsubsection{Aquatic insect data}
+\label{Aquatic insect data}
+
+We used governmental biomonitoring data on macroinvertebrates from 4,752 stream sites (i.e. stream reaches with a maximum of 20 meters length) sampled during 2006-2007 that covered the whole spatial extent of Germany (Figure 4.1). Data coverage in terms of number of sites was lower (approximately 1\% of the total number of sites) in the southeast and northwest (in proximity to the North and Baltic sea) than in the other regions. The biomonitoring data was produced following a standardized protocol, where a pooled sample was taken from all major habitat types in a stream site (AQEM CONSORTIUM, 2002). Samples were collected from the middle and small sized streams in each ecoregion of Germany. For more details on biological sampling, subsampling and sorting see AQEM CONSORTIUM (2002), Biss et al. (2006) and Rolauffs et al. (2003). Given the semi-quantitative nature of macroinvertebrate data, the data were originally reported as abundance classes where the classes approximated log-transformed abundance data following the classes of the saprobic index (for the description of the abundance classes see AQEM CONSORTIUM (2002) and Rolauffs et al. (2003)). Thus, the abundance classes varied on a scale of zero to seven; zero meaning no abundance, i.e. absence and seven the highest abundance (Rolauffs et al., 2003). Overall, abundance classes for 2,099 stream macroinvertebrates were available. Abundance data were preferred over presence-absence data because more powerful hypothesis tests are available for abundance data in spatial pattern analysis of assemblage compositions and studies of turnover rates (Legendre et al., 2005).
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\textwidth]{Figures/Fig_4_1.png}
+  \caption{Distribution of the 4,752 stream sites sampled by the German national bio-monitoring program during 2006-2007. Spatial reference system is WGS 1984.}
+  \label{Fig_4_1}
+\end{figure}
+
+We examined the homogeneity of taxonomic resolution and found that the organisms were reported at different taxonomic levels (from class to species). We took the subset of 1,901 organisms (91 \%) that were reported at genus (660) and species (1,241) levels. From this subset, we selected the aquatic insect orders, namely Diptera (True flies), Ephemeroptera (Mayflies), Odonata (Dragonflies and Damselflies), Plecoptera (Stoneflies) and Trichoptera (Caddisflies) (Table 4.1). Aerial dispersers are more suitable for large scale analyses than exclusive aquatic dispersers, because they can disperse through the landscape and are not limited to the stream network (Bonada et al., 2012; Wikelski et al., 2006). Moreover, these orders were also used in previous large scale studies to indicate climate vulnerability (Conti et al., 2013; Hering et al., 2009; Hershkovitz et al., 2015; Sandin et al., 2014; Tierno de Figueroa et al., 2010) and information for the selected traits were available for all organisms in these orders. This resulted in 782 species [and 395 genera] that comprised 384 [216] dipterans, 101 [39] ephemeropterans, 42 [33] odonates, 52 [36] plecopterans and 203 [71] trichopterans. Next, in case that a taxon was identified at genus level for more than 1 \% of stream sites, we converted all species belonging to this genus to genus level. This was the case for 73 \% of the species and was done to avoid artifacts from potential spatial pattern linked to the taxonomic resolutions, for instance mainly genus level identification in regions with low data coverage.
+
+\subsubsection{Biological and ecological traits data}
+\label{Biological and ecological traits data}
+
+Biological and ecological traits of aquatic insects were taken from two databases: (i) the freshwater ecology database (\href{http://www.freshwaterecology.info}{www.freshwaterecology.info}) (Schmidt-Kloiber and Hering, 2015) and (ii) the Tachet database (Usseglio-Polatera et al., 2000). The trait information is recorded at species level in the freshwater ecology database, whereas they are recorded mostly at genus and species levels in the Tachet database. In both databases, the membership state (see Schmera et al. (2015) for terminology) of a taxon for a particular trait is generally described on a scale from zero to 10 (with exceptions for the Tachet database); zero indicates no membership and 10 the highest membership state. We selected the climate-associated traits from six grouping features (for details see Table 4.1) and converted the membership state of the traits into percentages as suggested by Schmera et al. (2015). These traits were selected because they were used in previous large scale studies to indicate vulnerability (Conti et al., 2013; Hering et al., 2009; Hershkovitz et al., 2015; Sandin et al., 2014; Tierno de Figueroa et al., 2010) and have the highest data coverage for the macroinvertebrates in German streams. We also compared the membership states of the insect orders for each of the selected traits (Table C.1 in appendix C).
+
+\subsubsection{Calculation of assemblage trait composition}
+\label{Calculation of assemblage trait composition}
+
+The biomonitoring data were linked to the trait data using the codes of “The development and testing of an integrated assessment system for the ecological quality of streams and rivers throughout Europe using benthic macroinvertebrates” (AQEM) project to avoid discrepancies in naming conventions (Department of Applied Zoology/Hydrobiology, University Duisburg-Essen, Germany (DZHUDE), 2008). Each of the species was assigned with the  traits using their corresponding percentage membership states that were multiplied with the absolute abundance classes of the species for a site to compute relative abundance classes for the traits (Figure 4.2). To assign trait information to genera, we calculated the median of the related species level information following Schmidt-Kloiber and Nijboer (Schmidt-Kloiber and Nijboer, 2004) except for maximal body size where genus level information were available in the Tachet database for all genera. Subsequently, the assemblage trait composition, i.e. abundance weighted trait (AWT) was calculated following the procedure described in (Schmera et al., 2014) and as outlined in Figure 4.2. The AWT was calculated as a measure of assemblage trait composition because it is the most frequently used metric to assess the relationship between assemblage traits and environmental variables (Dolédec et al., 2006; Larsen and Ormerod, 2010). Note that we use the term assemblage trait composition to improve readability, although the assemblage data was restricted to aquatic insects, and hence does not represent the complete macroinvertebrate assemblage. The calculation resulted in annual averaged abundance-weighted traits (AWT) for each insect order (Figure C.1 in appendix C) and for the combined (full) data (Figure 4.3; 4.4) for each stream site. The calculation was omitted for the dispersal capacity of ephemeropterans and plecopterans because the grouping feature consisted of only one trait (low dispersal). However, they were included in the calculation for the full data.
+
+\subsubsection{Bioclimatic indices and altitude data}
+\label{Bioclimatic indices and altitude data}
+
+The 35 bioclimatic indices (BI, denoted as “Bio01” to “Bio35”, see Table 4.2 for details) for temperature, precipitation, radiation and moisture were collected from the global climatologies for bioclimatic modeling (CliMond) database (www.climond.org) (Kriticos et al., 2012). A previous study showed that these BIs can provide an approximation of climate impact on assemblage patterns, despite the omission of confounding endogenous factors such as biotic interactions, evolutionary change and dispersal potential (Araújo and Peterson, 2012). The scale of variability was determined by the spatial resolution of the BI raster, which is 10 arc-minutes (approximately 18 km). The digital elevation model (giving altitude over mean sea level) for Germany was collected from the ASTER GDEM on one arc-second (approximately 30 m) resolution (National Aeronautics and Space Administration (NASA) and Japan’s Ministry of Economy, Trade and Industry (METI), 2009). The altitude raster was resampled to the resolution of the BI rasters to extract altitude information for each BI raster cell.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\linewidth]{Figures/Fig_4_2.png}
+  \caption{Conversion steps from abundance classes of the selected aquatic insects to trait compositional (annual averaged abundance weighted traits) data.}
+  \label{Fig_4_2}
+\end{figure}
+
+Although no clear gradient in the BIs was found for Germany, lower temperatures and higher precipitation were mostly observed in the southern regions, whereas higher temperatures and lower precipitation were mostly observed in the northern regions (Figure C.2). For example, observed ranges of the annual mean temperature (Bio01) and annual precipitation (Bio12) are 2 to 5 \textsuperscript{0}C and 7 to 12 \textsuperscript{0}C, and 1200 to 1600 mm and 600 to 800 mm in the southern and northern regions, respectively. The northern and southern regions are portrayed as flat (zero to 250 m above sea level) and mountainous (600 to 1800 m above sea level), respectively (Figure C.3).  The BIs showed significant (p $<$ 0.001) spatial autocorrelation, i.e. average Moran's I = 0.28 (Table C.2). Significant spatial gradients were also observed for the BIs (Table C.2). Longitudinal (North – South) and altitudinal (high – low) gradients were both stronger than the latitudinal gradient (East – West) for
+
+\begin{landscape}
+\small
+\setlength{\LTcapwidth}{\linewidth}
+\begin{longtable}[c]{>{\centering\arraybackslash}m{3.2cm}|>{\centering\arraybackslash}m{0.7cm}>{\centering\arraybackslash}m{1.7cm}>{\centering\arraybackslash}m{0.8cm}>{\centering\arraybackslash}m{1.0cm}>{\centering\arraybackslash}m{1.1cm}>{\centering\arraybackslash}m{1.3cm}|>{\centering\arraybackslash}m{0.7cm}>{\centering\arraybackslash}m{1.7cm}>{\centering\arraybackslash}m{0.8cm}>{\centering\arraybackslash}m{1.0cm}>{\centering\arraybackslash}m{1.1cm}>{\centering\arraybackslash}m{1.3cm}}
+\caption{Explained variances and spatial autocorrelation in the traits of each order and full data by the bioclimatic indices. The detailed information on the traits including the source databases and their occurrence and variability in Germany are presented. \label{Table 4.1}}\\
+
+\hline
+\textbf{Grouping features and traits} & \multicolumn{6}{c|}{\textbf{Explained variability (\%)}} & \multicolumn{6}{c}{\textbf{Explained spatial autocorrelation (\%)}}\\
+ & \textbf{Diptera} & \textbf{Ephemeroptera} & \textbf{Odonata} & \textbf{Plecoptera} & \textbf{Trichoptera} & \textbf{Full data} & \textbf{Diptera} & \textbf{Ephemeroptera} & \textbf{Odonata} & \textbf{Plecoptera} & \textbf{Trichoptera} & \textbf{Full data}\\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Grouping features and traits} & \multicolumn{6}{c|}{\textbf{Explained variability (\%)}} & \multicolumn{6}{c}{\textbf{Explained spatial autocorrelation (\%)}}\\
+ & \textbf{Diptera} & \textbf{Ephemeroptera} & \textbf{Odonata} & \textbf{Plecoptera} & \textbf{Trichoptera} & \textbf{Full data} & \textbf{Diptera} & \textbf{Ephemeroptera} & \textbf{Odonata} & \textbf{Plecoptera} & \textbf{Trichoptera} & \textbf{Full data}\\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\textbf{\textit{Average over traits and orders}} & \textbf{\textit{14}} & \textbf{\textit{16\textsuperscript{\#}}} & \textbf{\textit{13}} & \textbf{\textit{16\textsuperscript{\#}}} & \textbf{\textit{15}} & \textbf{\textit{19}} & \textbf{\textit{50}} & \textbf{\textit{59\textsuperscript{\#}}} & \textbf{\textit{46}} & \textbf{\textit{53}} & \textbf{\textit{54}} & \textbf{\textit{59}}\\
+\hline
+\endlastfoot
+
+\textbf{Biological traits} & & & & & & & & & & & & \\
+ & & & & & & & & & & & & \\
+\textit{Dispersal capacity\textsuperscript{a}} & & & & & & & & & & & & \\
+Unknown & NA & NA & NA & NA & 4.7 & 4.1 & NA & NA & NA & NA & 44 & 25\\
+Low & NA & * & NA & * & 12 & 16 & NA & * & NA & * & 38 & 68\\
+High & NA & NA & NA & NA & 10 & 15 & NA & NA & NA & NA & 54 & 38\\
+\textit{Average} & \textit{NA} & \textit{NA} & \textit{NA} & \textit{NA} & \textit{9.1} & \textit{12} & \textit{NA} & \textit{NA} & \textit{NA} & \textit{NA} & \textit{45} & \textit{44}\\
+\hline
+\textit{Maximal body size\textsuperscript{b}} & & & & & & & & & & & & \\
+$>$ 0.25 cm to 0.5 cm & 8.0 & 10 & NA & 32 & 19 & 17 & 1.0 & 35 & NA & 79 & 51 & 78\\
+$>$ 0.5 cm to 1 cm & 14 & 13 & NA & 9.7 & 11 & 12 & 62 & 61 & NA & 83 & 50 & 65\\
+$>$ 1 cm to 2 cm & 10 & 12 & 18 & 21 & 14 & 18 & 41 & 35 & 32 & 49 & 60 & 75\\
+$>$ 2 cm to 4 cm & 16 & 12 & 10 & 8.6 & 12 & 14 & 39 & 80 & 88 & 26 & 26 & 65\\
+$>$ 4 cm to 8 cm & 13 & NA & 16 & NA & NA & 13 & 3.0 & NA & 11 & NA & NA & 46\\
+\textit{Average} & \textit{12} & \textit{12} & \textit{15} & \textit{18} & \textit{14} & \textit{15} & \textit{29} & \textit{53} & \textit{44} & \textit{59} & \textit{47} & \textit{66} \\
+\hline
+\textit{Reproductive capacity\textsuperscript{a}} & & & & & & & & & & & & \\
+Flexible & NA & 23 & NA & 25 & 4.1 & 10 & NA & 66 & NA & 90 & 65 & 37\\
+Semivoltine & 11 & 10 & NA & 7.0 & 22 & 14 & 55 & 29 & NA & 42 & 52 & 47\\
+Univoltine & 16 & 9.3 & NA & 14 & 28 & 8.6 & 53 & 70 & NA & 89 & 68 & 60\\
+Bivoltine & 12 & 11 & NA & NA & 15 & 20 & 35 & 70 & NA & NA & 11 & 71\\
+Trivoltine & 7.6 & 25 & NA & NA & NA & 9.7 & 2.3 & 60 & NA & NA & NA & 34\\
+Multivoltine & 17 & 15 & NA & NA & 3.3 & 9.1 & 76 & 41 & NA & NA & 36 & 16\\
+\textit{Average} & \textit{13} & \textit{15} & \textit{NA} & \textit{15} & \textit{14} & \textit{12} & \textit{44} & \textit{56} & \textit{NA} & \textit{74} & \textit{46} & \textit{44}\\
+\hline
+\textit{Resistance to drought\textsuperscript{a}} & & & & & & & & & & & & \\
+Unknown resistance type & NA & NA & NA & 18 & 8.2 & 10 & NA & NA & NA & 3.7 & 92 & 51\\
+No drought resilience & NA & NA & NA & NA & 13 & 7.9 & NA & NA & NA & NA & 28 & 0.1\\
+Egg diapause & NA & 17 & NA & 18 & NA & 41 & NA & 61 & NA & 46 & NA & 73\\
+Larvae diapause & NA & 16 & NA & NA & 6.1 & 13 & NA & 67 & NA & NA & 60 & 66\\
+Adult diapause & NA & NA & NA & NA & 11 & 13 & NA & NA & NA & NA & 18 & 15\\
+\textit{Average} & \textit{NA} & \textit{16} & \textit{NA} & \textit{18} & \textit{9.8} & \textit{17} & \textit{NA} & \textit{64} & \textit{NA} & \textit{25} & \textit{49} & \textit{41}\\
+\hline
+\textbf{Ecological traits} & & & & & & & & & & & & \\
+ & & & & & & & & & & & & \\
+\textit{Current preference\textsuperscript{a}} & & & & & & & & & & & & \\
+Indifferent & 9.2 & NA & NA & 18 & 5.3 & 24 & 33 & NA & NA & 63 & 2.7 & 67\\
+Limnobiont & 6.3 & NA & 9.8 & NA & 22 & 15 & 22 & NA & 42 & NA & 65 & 61\\
+Limnophil & 7.1 & 25 & 6.5 & 27 & 43 & 41 & 90 & 56 & 5.6 & 63 & 75 & 77\\
+Limno to Rheophil & 5.1 & 4.4 & 12 & 8.7 & 15 & 8.1 & 12 & 42 & 13 & 36 & 57 & 74\\
+Rheo to Limnophil & 12 & 15 & 14 & 7.3 & 6.7 & 13 & 52 & 58 & 63 & 13 & 82 & 71\\
+Rheophil & 27 & 17 & 20 & 34 & 26 & 40 & 69 & 58 & 67 & 72 & 68 & 85\\
+Rheobiont & 21 & 7.3 & 8.7 & 13 & 22 & 30 & 52 & 13 & 89 & 65 & 54 & 59\\
+\textit{Average} & \textit{13} & \textit{14} & \textit{12} & \textit{18} & \textit{20} & \textit{25} & \textit{47} & \textit{45} & \textit{47} & \textit{52} & \textit{58} & \textit{71}\\
+\hline
+\textit{Temperature preference\textsuperscript{a}} & & & & & & & & & & & & \\
+Eurytherm & 26 & 21 & NA & 22 & 14 & 34 & 84 & 65 & NA & 67 & 66 & 87\\
+Very cold & 8.9 & 34\textsuperscript{\#} & NA & 16 & 17 & 50\textsuperscript{\#} & 83 & 76 & NA & 34 & 59 & 82\\
+Cold & 30 & 14 & NA & 8.5 & 19 & 42 & 71 & 84 & NA & 65 & 69 & 91\textsuperscript{\#}\\
+Moderate & 15 & 33 & NA & 6.9 & 8.5 & 8.6 & 84 & 88 & NA & 67 & 98\textsuperscript{\#} & 60\\
+Warm & 24 & 15 & NA & 10 & 15 & 24 & 82 & 80 & NA & 16 & 66 & 86\\
+\textit{Average} & \textit{21} & \textit{23} & \textit{NA} & \textit{13} & \textit{15} & \textit{32\textsuperscript{\#}} & \textit{81} & \textit{79} & \textit{NA} & \textit{50} & \textit{71} & \textit{81\textsuperscript{\#}} \\
+ & & & & & & & & & & & & \\
+
+\end{longtable}
+\vspace{-0.4cm}
+\hspace{-0.6cm}
+\footnotesize
+\textsuperscript{a}data source: freshwater ecology database (www.freshwaterecology.info) (Schmidt-Kloiber & Hering, 2012)\\
+\textsuperscript{b}data source: Tachet database (Usseglio-Polatera et al., 2000)\\
+\textsuperscript{NA}Trait not occurring\\
+*Trait omitted from the analysis because of zero variability (i.e. all organisms have same trait) and therefore the abundance weighted trait cannot be computed\\
+\textsuperscript{\#}Traits and orders showing the strongest relationship with the bioclimatic indices in their variability and spatial autocorrelation\\
+
+\normalsize
+\vspace{1cm}
+
+\noindent most of the BIs. Longitude and altitude of the BI cells showed significantly high correlation (r = -0.8, p $<$ 0.001) with each other and thus indicates that the dominant climatic variation along the North – South (longitudinal) gradient on the scale of Germany (also observed in Figure C.2) may be attributed to topography, i.e. altitude (low – high).
+
+\newpage
+
+\begin{figure}[t]
+  \centering
+  \vspace{-1.5cm}
+  \includegraphics[width=0.8\linewidth]{Figures/Fig_4_3.png}
+  \caption{Annual averaged abundance weighted traits across 4,752 stream sites in Germany for the biological traits of the full data. The figure sub-captions and panel captions indicate names of grouping features and traits, respectively. The gray dots indicate the zero abundance, i.e. trait absence.}
+  \label{Fig_4_3}
+\end{figure}
+
+\newpage
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{Figures/Fig_4_4.png}
+  \caption{Annual averaged abundance weighted traits across 4,752 stream sites in Germany for the ecological traits of the full data. The figure sub-captions and panel captions indicate names of grouping features and traits, respectively. The gray dots indicate the zero abundance, i.e. trait absence.}
+  \label{Fig_4_4}
+\end{figure}
+
+\end{landscape}
+
+\subsubsection{Pre-processing of BI and AWT data}
+\label{Pre-processing of BI and AWT data}
+
+The stream sites covered 72\% of the total BI raster cells within the boundary of Germany (Figure C.4). However, given the relatively coarse resolution of the BI data, multiple sites were often located in one BI raster cell. Therefore, we aggregated the AWTs in all sites within a BI raster cell via averaging and assigned the result to that cell to avoid pseudo replication. The BIs exhibited considerable multicollinearity (Figure C.5) and therefore we conducted a principal component analysis (PCA) to arrive at independent variables and extracted the scores of the 35 orthogonal principal components, as suggested by Graham (2003), for latter analysis. PCA was preferred over residual and sequential regression as this also obliterates the likely effects of the latent spatial variables (as described above) on the BIs (Graham, 2003). All data processing and PCA of BIs were done in R software environment (R Development Core Team, 2015) using the packages “sp” (Bivand et al., 2008), “vegan” (Oksanen et al., 2007), “raster” (Hijmans and Van Etten, 2010) and “maptools” (Lewin-Koh et al., 2011).
+
+\subsection{Analyses of the spatial relationship between traits and climate}
+\label{Analyses of the spatial relationship between traits and climate}
+
+The spatial relationship between the aggregated AWT per BI cell and the BIs was analyzed in four steps (Figure C.6). First, we checked for spatial autocorrelations in the AWT (Table C.3). The spatial autocorrelation was analyzed using Global Moran's I (see Bonada et al. (2012) for details on computation), where great circle distances among BI cell pairs were given as weights based on the simplified assumption that the selected species disperse symmetrically during their terrestrial life stage (Wikelski et al., 2006). The computations of spatial autocorrelations were done using the R package “ape” (Paradis et al., 2004).
+
+Second, zero-or-one inflated beta regression models were fitted with the AWT as response and 35 principal component scores of the BIs as explanatory variables (Ospina and Ferrari, 2012). This was done to identify the traits and insect orders with the highest climate response. We used zero-or-one inflated beta regression because the response variables were proportional data and included many zeros and ones (Nishii and Tanaka, 2012). The models were fitted for the AWT of each order and the full data and the adjusted R\textsuperscript{2}s were calculated to identify the explained variance by the BIs. The zero-or-one-inflated beta regression model fitting was done using the R package “gamlss” (Rigby and Stasinopoulos, 2005).
+
+In the third step, we checked for spatial autocorrelation in the residuals of the trait-climate models using Moran's I as outlined above. The Moran's I values for the residuals of the trait-climate models were subtracted from the complete Moran's I values for the AWT (computed at the first step). Thus, the percentage of trait spatial autocorrelation that is associated with the BIs was identified. This was done to identify the traits and orders that show the highest potential for changing their distributional pattern, i.e. redistribution under future climate change.
+
+In a final step, the zero-or-one inflated beta regression models were re-fitted with the AWT for the previously identified traits and orders with the highest climate response and potential for redistribution as response variables and 35 BIs (original values) separately as explanatory variables. The BIs with the highest explanatory power in terms of R\textsuperscript{2} were identified for the traits and insect orders with the highest climate response. To identify the BIs explaining the highest amount of spatial autocorrelation in the traits and in the insect orders with the highest potential for redistribution, we computed the Moran's I in the residuals of the trait-individual BI models and subtracted them from the complete Moran's I computed at the first step.
+
+\begin{landscape}
+\small
+\setlength{\LTcapwidth}{\linewidth}
+
+\begin{longtable}[c]{>{\centering\arraybackslash}m{2.3cm}>{\centering\arraybackslash}m{5.5cm}|>{\centering\arraybackslash}m{3.0cm}>{\centering\arraybackslash}m{3.4cm}|>{\centering\arraybackslash}m{2.5cm}>{\centering\arraybackslash}m{3.0cm}}
+\caption{Explained variances and spatial autocorrelation by the individual bioclimatic indices in the traits and orders with the highest climate response and potential for changing distribution pattern. Details on the bioclimatic variables are extracted from Kriticos et al. (2012) and \href{https://www.climond.org/Resources.aspx}{https://www.climond.org/Resources.aspx}. \label{Table 4.2}}\\
+
+\hline
+\textbf{Variable Number} & \textbf{Variables (unit)} & \multicolumn{2}{c|}{\textbf{Explained variance (\%)}} & \multicolumn{2}{c}{\textbf{Explained spatial autocorrelation (\%)}}\\
+ & & \textbf{Very cold temperature preferring insects} & \textbf{Very cold temperature  preferring Ephemeroptera} & \textbf{Cold temperature preferring insects} & \textbf{Moderate temperature preferring Trichoptera}\\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Variable Number} & \textbf{Variables (unit)} & \multicolumn{2}{c|}{\textbf{Explained variance (\%)}} & \multicolumn{2}{c}{\textbf{Explained spatial autocorrelation (\%)}}\\
+ & & \textbf{Very cold temperature preferring insects} & \textbf{Very cold temperature  preferring Ephemeroptera} & \textbf{Cold temperature preferring insects} & \textbf{Moderate temperature preferring Trichoptera}\\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+Bio01 & Annual mean temperature (\textsuperscript{0}C) & 8.6 & 9.1 & 3.2 & 61\\
+Bio02 & Mean diurnal temperature range (\textsuperscript{0}C) & 3.2 & 1.6 & 24 & 57\\
+Bio03 & Isothermality & 7.2 & 2.9 & 26 & 50\\
+Bio04 & Temperature seasonality & 2.8 & 0.9 & 5.9 & 61\\
+Bio05 & Max temperature of warmest week (\textsuperscript{0}C) & 6.1 & 5.8 & 11 & 63\\
+Bio06 & Min temperature of coldest week (\textsuperscript{0}C) & 1.8 & 3.5 & 6.1 & 59\\
+Bio07 & Temperature annual range (\textsuperscript{0}C) & 0.5 & 0.1 & 6.6 & 61\\
+Bio08 & Mean temperature of wettest quarter (\textsuperscript{0}C) & 5.3 & 4.2 & 3.1 & 59\\
+Bio09 & Mean temperature of driest quarter (\textsuperscript{0}C) & 0.2 & 0.7 & 11 & 64\\
+Bio10 & Mean temperature of warmest quarter (\textsuperscript{0}C) & 13 & 12 & 8.2 & 59\\
+Bio11 & Mean temperature of coldest quarter (\textsuperscript{0}C) & 1.5 & 3.4 & 9.7 & 63\\
+Bio12 & Annual precipitation (mm) & 15 & 13 & 29 & 37\\
+Bio13 & Precipitation of wettest week (mm) & 13 & 11 & 31 & 36\\
+Bio14 & Precipitation of driest week (mm) & 18\textsuperscript{\#} & 14 & 32 & 33\\
+Bio15 & Precipitation seasonality & 1.4 & 0.5 & 5.3 & 63\\
+Bio16 & Precipitation of wettest quarter (mm) & 13 & 11 & 28 & 41\\
+Bio17 & Precipitation of driest quarter (mm) & 15 & 12 & 27 & 40\\
+Bio18 & Precipitation of warmest quarter (mm) & 12 & 11 & 25 & 45\\
+Bio19 & Precipitation of coldest quarter (mm) & 12 & 10 & 18 & 54\\
+Bio20 & Annual mean radiation (W m\textsuperscript{-2}) & 3.7 & 2.5 & 7.8 & 60\\
+Bio21 & Highest weekly radiation (W m\textsuperscript{-2}) & 2.3 & 1.2 & 2.2 & 58\\
+Bio22 & Lowest weekly radiation (W m\textsuperscript{-2}) & 12 & 8.0 & 33 & 49\\
+Bio23 & Radiation seasonality & 17 & 11 & 46\textsuperscript{\#} & 43\\
+Bio24 & Radiation of wettest quarter (W m\textsuperscript{-2}) & 1.8 & 1.3 & 4.4 & 60\\
+Bio25 & Radiation of driest quarter (W m\textsuperscript{-2}) & 1.7 & 1.5 & 2.9 & 65\textsuperscript{\#}\\
+Bio26 & Radiation of warmest quarter (W m\textsuperscript{-2}) & 0.1 & 0.1 & 5.4 & 63\\
+Bio27 & Radiation of coldest quarter (W m\textsuperscript{-2}) & 12 & 8.6 & 28 & 54\\
+Bio28 & Annual mean moisture index & 16 & 14\textsuperscript{\#} & 18 & 46\\
+Bio29 & Highest weekly moisture index & 8.2 & 8.1 & 5.4 & 58\\
+Bio30 & Lowest weekly moisture index & 14 & 13 & 18 & 48\\
+Bio31 & Moisture index seasonality & 16 & 13 & 21 & 43\\
+Bio32 & Mean moisture index of wettest quarter & 9.8 & 9.2 & 7.5 & 60\\
+Bio33 & Mean moisture index of driest quarter & 14 & 13 & 20 & 47\\
+Bio34 & Mean moisture index of warmest quarter & 15 & 13 & 21 & 45\\
+Bio35 & Mean moisture index of coldest quarter & 11 & 10 & 11 & 55\\
+
+\end{longtable}
+\vspace{-0.4cm}
+\hspace{-0.6cm}
+\footnotesize
+\textsuperscript{\#}the highest explained variability and spatial autocorrelation in a trait of insects or an order by a bioclimatic index\\
+\normalsize
+
+\section{Results and Discussion}
+\label{Results and Discussion}
+
+\subsection{Which of the climate-associated traits and organism groups show the highest response to climate and highest potential for changing distribution pattern under future climate change?}
+\label{Which of the climate-associated traits and organism groups show the highest response to climate and highest potential for changing distribution pattern under future climate change?}
+
+We quantified the amount of large scale variability and spatial autocorrelation in the assumed climate-associated traits from six grouping features and five aquatic insect orders of the freshwater assemblages that is explained by 35 global BIs. The BIs explained 19\% of the large scale variability in the AWT of the full data on average (Table 4.1). Traits of the temperature preference grouping feature were the most responsive (32\% on average)  to the BIs, and the insects with very cold temperature preference (50\%) showed the highest response. Among the insect orders, Ephemeroptera and Plecoptera (16\%) showed the highest response to the BIs on average, and the ephemeropterans with very cold temperature preference (33\%) showed the highest response in particular (Table 4.1).
+
+The highest response of the traits of the temperature preference grouping feature, particularly of the very cold and cold preference may be due to traits of temperature preference grouping feature being the product of several underlying climate-associated biological traits (Hering et al., 2009; Stamp et al., 2010; Verberk and Bilton, 2013). For example, cold temperature preference of the selected aquatic insects in our study was significantly related to low dispersal capacity, large body size ($>$ 4 cm), low reproductive capacity (semivoltine) and resistance to drought (egg diapause) (Table C.4), and together they explained 55\% of the variability in cold temperature preference. Likewise, warm temperature preference of the insects was related to high dispersal capacity, small body size ($\leq$ 0.5 cm), high reproductive capacity (multivoltine) and resistance to drought (adult diapause) (Table C.4), and together they explained 48\% of the variability in warm temperature preference. These findings are in agreement with other studies on the association of traits with climate change. For example, insects with low dispersal are often characterized by a restricted temperature (cold) niche and hence are more affected by change in temperature regimes, e.g.
+
+\end{landscape}
+
+\noindent contractions of alpine regions than the insects with high dispersal ability (Domisch et al., 2011; Hering et al., 2009; Hershkovitz et al., 2015; Tierno de Figueroa et al., 2010). Large-bodied insects generally lack efficient respiration and thus have high ectotherm oxygen demand and hence typically inhabit streams with high oxygen supply, i.e. cold water streams (Harrison et al., 2010; Lawrence et al., 2010; Verberk and Atkinson, 2013). Hence, we argue that the highest response of the traits of temperature preference grouping feature to the BIs in our study rather follows from the response of several underlying climate-biological traits relationships. Thus, we envisage an adverse effect of global warming on the insects inhabiting cold water streams in Germany because their biological and ecological niche will be contracted. This prediction is in line with Poff et al. (2010), where temperature has been shown to be mostly accountable for the differences in the sensitivity of stream macroinvertebrate traits across geographic space and also with Lawrence et al. (2010) and Stamp et al. (2010) where major declines in macroinvertebrates that inhabit cold water streams were reported as a result of climate change.
+
+The differences in the response of insect orders observed in our study are related to their biological and ecological traits (Table C.1; C.4) (Conti et al., 2013; Harrison et al., 2010; Hering et al., 2009; Hershkovitz et al., 2015; Tierno de Figueroa et al., 2010). Although European ephemeropterans were found to be generally tolerant to climate change (Conti et al., 2013), we observed the highest BI response in the German ephemeropterans with very cold temperature preference (Table 4.1). This indicates that ephemeropterans inhabiting very cold water streams in Germany are also vulnerable to climate change because of shrinking ecological niche (Stocker et al., 2013). Plecopterans showed equally high response as ephemeropterans because they show high membership state for the very cold and cold preference traits, which showed the highest response to the BIs (Table 4.1; C.1). Generally, plecopterans have a very narrow environmental tolerance with nymphs living mainly in cold and well-oxygenated running water and adults showing low flight ability (Tierno de Figueroa et al., 2010; Verberk and Atkinson, 2013). Hence, plecopterans have never transitioned to thermally variable lentic water and are thus vulnerable to increasing temperature and severe drought episodes (Harrison et al., 2010). Thus, we also anticipate an adverse effect of climate change on plecopterans in Germany. Overall, our results indicate that insects with traits such as preference for cold water (due to several underlying traits), and from certain orders, i.e. Ephemeroptera and Plecoptera may indeed be more vulnerable to climate change than others (Table 4.1). Thus, we suggest that future studies on the vulnerability of macroinvertebrate assemblage traits to climate change should particularly focus on traits and orders exhibiting the strongest signal to climate.
+
+Regarding the potential for changing distribution pattern, i.e. redistribution, on average, 59\% of the spatial autocorrelation in the AWT of the full data was associated with the BIs (Table 4.1). The BIs explained the highest spatial autocorrelation in the temperature preference (81\%), particularly in the insects with cold temperature preference (91\%) (Table 4.1). More than 50\% of the spatial autocorrelation for the majority (62\%) of the traits in the insect orders was associated with the BIs. The BIs explained the highest amount of spatial autocorrelation for the insect order Ephemeroptera (59\%) in general, and for the Trichoptera with moderate temperature preference (97\%). The amount of large scale variability explained by the BIs (described above) in insect traits and orders showed positive significant correlation (r = 0.5, p $<$ 0.001) with the amount of explained spatial autocorrelation. This indicates that the traits and orders showing higher response to the BIs also exhibit a higher potential for changing spatial distribution pattern under changing BIs and vice-versa. Overall, the spatial distribution pattern, i.e. patchiness in the aquatic insects on large scales mostly originate from their high response to spatially autocorrelated climate that is line with Bonada et al. and Domisch et al. (Bonada et al., 2012; Domisch et al., 2013).
+
+The highest potential for redistribution in the traits of temperature preference grouping feature and insect order Ephemeroptera, and trichopterans preferring moderate temperature also presumably relates to their strong covariation with underlying climate-associated biological and ecological traits as discussed above (Table C.1; C.4). For example, trichopterans showed high membership state for the underlying biological traits of the moderate temperature preference, i.e. small body size ($<$ 0.5 cm) and high drought resistance (adult diapause) (Table C.1; C.4), and hence moderate temperature preferring trichopterans showed the highest potential for redistribution. The redistribution of traits and orders may occur through local extinction of vulnerable insects and thus range contraction (Hering et al., 2009), or by expansion of the range of tolerant macroinvertebrates in response to climate change (Daufresne et al., 2009; Zeuss et al., 2014). Moreover, given that there is a strong association of the spatial distribution pattern of AWT of the insect orders individually (Figure C.1) and of the full data (Figure 4.3; 4.4) with the longitudinal gradient (which is coherent with the observed longitudinal spatial distribution pattern in the climate sensitive European stream macroinvertebrates (Conti et al., 2013; Hering et al., 2009; Hershkovitz et al., 2015)), and the BIs also showed a major longitudinal gradient with high correlation to altitude (Figure C.2 and Table C.2), the redistribution may occur along the longitudinal (altitudinal) gradient. For example, a higher proportion of insects (0.4) and ephemeropterans (0.3) with cold temperature preference were observed in the cooler southern mountainous regions than in the warmer flat North of Germany (Figure 4.4; C.1) that may shrink their distribution range. By contrast, trichopterans with moderate temperature preference that predominantly (0.5) occur in the warmer flat northern regions than in the cooler South may extend their range from North to South because more streams will be suitable for their habitat due to increasing temperature. A similar phenomenon was observed in Hering et al. (2009) where most of the European trichopterans were suggested to benefit from increasing stream temperature (78\%) and decreasing current (77\%). Overall, climate change may alter the trait distribution pattern especially with respect to temperature preference and for the insect order Ephemeroptera, Plecoptera, and for trichopterans with moderate temperature preference in Germany, though adaptations may occur and ameliorate the ecological effects.
+
+The explained variability and spatial autocorrelation for the traits and orders by the BIs in our study are similar (with a few exceptions) to previous studies using aerial and exclusive aquatic dispersers on comparable spatial scales (Bonada et al., 2012; Poff et al., 2010). A study dealing with the Mediterranean basin found that climate and environmental variables together explained $<$ 19\% variability for the same insect orders (except Diptera) (Bonada et al., 2012). Moreover, a lower percentage ($<$ 30\%) of spatial autocorrelation was associated with climate and other environmental variables than in our study, and in many cases significant spatial autocorrelation remained in the residuals. This discrepancy may be explained by the fact that the study considered only two climate variables (average precipitation and temperature) whereas we considered 35 BIs. The 35 BIs used in our study better captured the climate gradient in Germany and consequently are associated with higher variability and spatial autocorrelation in the AWTM. The use of different biological endpoints, i.e. taxonomic richness in Bonada et al. (2012) and trait abundance in our study may also explain this discrepancy. In another study on the catchment scale, climate and hydrological variables together explained a similar (19\%) trait variability (Poff et al., 2010) although this study was conducted on a largely different set of traits of macroinvertebrates. Overall, the differences between the studies presumably relate to the traits, organism groups and the number (dimension) of climate variables used as input in models (Dray et al., 2012).
+
+The inclusion of other environmental drivers such as geology and stream size may decrease the amount of trait variability and spatial autocorrelation that can be attributed to the BIs, especially if drivers exhibit collinearity with the BIs. Nevertheless, other environmental drivers explained much lower taxonomic and trait variation than climate in previous studies (Bonada et al., 2012; Poff et al., 2010). Moreover, in our study, the BIs explained more than half of the spatial autocorrelation for the majority of traits, and no statistically significant (all p $\geq$ 0.08) spatial autocorrelation was observed in the residuals of the trait-climate models (Table 4.1). This indicates that the remaining trait variability and spatial autocorrelation that can be explained by other environmental drivers are either statistically insignificant or have already been captured by climate, and thus these drivers are of lower importance for the traits under scrutiny (Dray et al., 2012).
+
+The results may bear some uncertainty regarding the northwestern and southeastern regions of Germany, which were represented by a relatively lower number of stream sites and in turn a lower coverage of BI raster cells than other regions (Figure 4.1; C.4). However,  previous studies on comparable spatial scales successfully captured macroinvertebrate trait and taxonomic variabilities and their relationships with climate and other environmental drivers, despite relying on less stream sites (lower density) (Bonada et al., 2012, 2007; Poff et al., 2010). Thus, we suggest that our results are sufficiently robust on the scale of Germany, though more stream sites may be required for smaller scale studies in some regions.
+
+\subsection{Which of the climatic aspects show the strongest relationship with the traits and organism groups showing the highest response and potential for redistribution?}
+\label{Which of the climatic aspects show the strongest relationship with the traits and organism groups showing the highest response and potential for redistribution?}
+
+The explained variance and spatial autocorrelation in the most responsive traits and orders by individual BIs was on average 50\% lower than by the combined BIs (Table 4.2). The BIs precipitation of the driest week (18\%) and radiation seasonality (17 \%) exhibited the strongest relationship with insects preferring very cold temperature (Table 4.2). Precipitation and moisture indices, i.e. annual moisture index and precipitation of the driest week (both 14\%), and moisture seasonality, moisture of the wettest and driest quarter (all 13\%) explained the highest variance in the very cold preferring ephemeropterans. The radiation seasonality (46\%), and radiation (65\%) and mean temperature (64\%) of the driest quarter explained the highest amount of spatial autocorrelation in the cold temperature preferring insects and moderate temperature preferring trichopterans, respectively (Table 4.2). Overall, these results suggest that aquatic insects in Germany may mainly be affected in response to potential changes in seasonal radiation and moisture.
+
+In the coming decades, the winter and summer temperatures are highly likely to increase, with the strongest increase predicted for the South of Germany (Stocker et al., 2013). Moreover, winter precipitation has been predicted to increase with a larger increase in the North. By contrast, summer precipitation has been predicted to decrease in Germany with the strongest decrease in the South (Stocker et al., 2013). Thus, we anticipate an increase in winter radiation and decrease in summer moisture for the South of Germany where the majority of very cold and cold temperature preferring insects occur (Figure 4.4), particularly the very cold and cold temperature preferring ephemeropterans and plecopterans (Figure C.1). Thus the increasing winter radiation and decreasing summer moisture may drive climate change effects on insects in general and ephemeropterans and plecopterans in particular that prefer cold water streams in Germany, and may eventually shrink their distribution range. These findings are in line with (Durance and Ormerod, 2007; Lawrence et al., 2010), where cold preferring stream macroinvertebrates were shown to be the most adversely affected by increasing winter temperature and decreasing summer precipitation. However, insects may also adapt to increasing temperature and decreasing precipitation (Lancaster and Downes, 2010a, 2010b). For example, adaptations such as decreasing body size (Daufresne et al., 2009) and color lightening of adults (Zeuss et al., 2014) have been observed in insects. Trichopterans with moderate temperature living in the flat North of Germany (Figure 4.4; C.1) may benefit from increasing radiation and recolonize upstream (Hering et al., 2009), and thus extend their distribution range from the North to the South. Overall, we anticipate a substantial change in the aquatic insect distribution pattern along the longitudinal gradient in Germany because of increasing seasonal radiation and decreasing moisture, especially in ephemeropterans and plecopterans with very cold and cold temperature preference and trichopterans with moderate temperature preference.
+
+\subsection{Concluding remarks}
+\label{Concluding remarks}
+
+The relationship of the aquatic insect assemblage trait composition with climate identified in our study can contribute to the development of trait-based metrics for predicting climate-related assemblage changes (Mlambo, 2014; Vandewalle et al., 2010). For example, insights from the relationship between the traits and climate could help to predict their responses to seasonal discharge, torrential floods and droughts (Bonada et al., 2007). Such insights will also support freshwater management with respect to global climate change, i.e. bio-monitoring based on climate priority traits.
+
+\openleft
+
+\begingroup
+
+\renewcommand{\addcontentsline}[3]{}% Remove functionality of \addcontentsline
+
+\begin{thebibliography}
+
+\bibitem{} \hangindent=1cm AQEM CONSORTIUM, 2002. Manual for the application of the aqem system. A comprehensive method to assess european streams using benthic macroinvertebrates, developed for the purpose of the water framework directive.
+
+\bibitem{} \hangindent=1cm Araújo, M.B., Peterson, A.T., 2012. Uses and misuses of bioclimatic envelope modeling. Ecology 93, 1527–1539.
+
+\bibitem{} \hangindent=1cm Biss, R., Kübler, P., Pinter, I., Braukmann, U., 2006. Leitbildbezogenes biozönotisches Bewertungsverfahren für Fließgewässer in der Bundesrepublik Deutschland -Ein erster Beitrag zur integrierten ökologischen Fließgewässerbewertung (Project report No. 298 24 777), UBA-FB 000348. Umweltforschungsplan des Bundesministeriums für Umwelt, Naturschutz und Reaktorsicherheit, Berlin.
+
+\bibitem{} \hangindent=1cm Bivand, R.S., Pebesma, E.J., Gómez-Rubio, V., 2008. Applied spatial data analysis with R. Springer, New York.
+
+\bibitem{} \hangindent=1cm Bonada, N., Dolédec, S., Statzner, B., 2012. Spatial autocorrelation patterns of stream invertebrates: exogenous and endogenous factors. Journal of Biogeography 39, 56–68. doi:10.1111/j.1365-2699.2011.02562.x
+
+\bibitem{} \hangindent=1cm Bonada, N., DoléDec, S., Statzner, B., 2007. Taxonomic and biological trait differences of stream macroinvertebrate communities between mediterranean and temperate regions: implications for future climatic scenarios. Global Change Biology 13, 1658–1671. doi:10.1111/j.1365-2486.2007.01375.x
+
+\bibitem{} \hangindent=1cm Brittain, J.E., 2008. Mayflies, biodiversity and climate change, in: International Advances in the Ecology, Zoogeography and Systematics of Mayflies and Stoneflies. University of California Publications in Entomology, California, pp. 1–14.
+
+\bibitem{} \hangindent=1cm Conti, L., Schmidt-Kloiber, A., Grenouillet, G., Graf, W., 2013. A trait-based approach to assess the vulnerability of European aquatic insects to climate change. Hydrobiologia 721, 297–315. doi:10.1007/s10750-013-1690-7
+
+\bibitem{} \hangindent=1cm Daufresne, M., Lengfellner, K., Sommer, U., 2009. Global warming benefits the small in aquatic ecosystems. Proceedings of the National Academy of Sciences 106, 12788–12793. doi:10.1073/pnas.0902080106
+
+\bibitem{} \hangindent=1cm Department of Applied Zoology/Hydrobiology, University Duisburg-Essen, Germany (DZHUDE), 2008. The Development and Testing of an Integrated Assessment System for the Ecological Quality of Streams and Rivers throughout Europe using Benthic Macroinvertebrates. Acronym: AQEM [WWW Document]. URL http://www.aqem.de/ (accessed 2.10.14).
+
+\bibitem{} \hangindent=1cm Deutscher Wetterdienst (DW), 2014. Weather and Climate - Deutscher Wetterdienst: Klimaüberwachung Deutschland [WWW Document]. URL http://www.dwd.de/ (accessed 1.15.14).
+
+\bibitem{} \hangindent=1cm Dolédec, S., Phillips, N., Scarsbrook, M., Riley, R.H., Townsend, C.R., 2006. Comparison of structural and functional approaches to determining landuse effects on grassland stream invertebrate communities. Journal of the North American Benthological Society 25, 44–60. doi:10.1899/0887-3593(2006)25[44:COSAFA]2.0.CO;2
+
+\bibitem{} \hangindent=1cm Domisch, S., Araújo, M.B., Bonada, N., Pauls, S.U., Jähnig, S.C., Haase, P., 2013. Modelling distribution in European stream macroinvertebrates under future climates. Global Change Biology 19, 752–762. doi:10.1111/gcb.12107
+
+\bibitem{} \hangindent=1cm Domisch, S., Jähnig, S.C., Haase, P., 2011. Climate-change winners and losers: stream macroinvertebrates of a submontane region in Central Europe: Climate change effects on stream macroinvertebrates. Freshwater Biology 56, 2009–2020. doi:10.1111/j.1365-2427.2011.02631.x
+
+\bibitem{} \hangindent=1cm Dray, S., Pélissier, R., Couteron, P., Fortin, M.-J., Legendre, P., Peres-Neto, P.R., Bellier, E., Bivand, R., Blanchet, F.G., De Cáceres, M., 2012. Community ecology in the age of multivariate multiscale spatial analysis. Ecological Monographs 82, 257–275. doi:10.1890/11-1183.1
+
+\bibitem{} \hangindent=1cm Dudgeon, D., Arthington, A.H., Gessner, M.O., Kawabata, Z.-I., Knowler, D.J., Lévêque, C., Naiman, R.J., Prieur-Richard, A.-H., Soto, D., Stiassny, M.L.J., Sullivan, C.A., 2005. Freshwater biodiversity: importance, threats, status and conservation challenges. Biological Reviews 81, 163–182. doi:10.1017/S1464793105006950
+
+\bibitem{} \hangindent=1cm Durance, I., Ormerod, S.J., 2007. Climate change effects on upland stream macroinvertebrates over a 25-year period. Global Change Biology 13, 942–957. doi:10.1111/j.1365-2486.2007.01340.x
+
+\bibitem{} \hangindent=1cm Floury, M., Usseglio-Polatera, P., Ferreol, M., Delattre, C., Souchon, Y., 2013. Global climate change in large European rivers: long-term effects on macroinvertebrate communities and potential local confounding factors. Global Change Biology 19, 1085–1099. doi:10.1111/gcb.12124
+
+\bibitem{} \hangindent=1cm Fortin, M.-J., Dale, M.R.T., 2005. Spatial analysis: a guide for ecologists. Cambridge University Press, Cambridge.
+
+\bibitem{} \hangindent=1cm Graham, M.H., 2003. Confronting multicollinearity in ecological multiple regression. Ecology 84, 2809–2815.
+
+\bibitem{} \hangindent=1cm Harrison, J.F., Kaiser, A., VandenBrooks, J.M., 2010. Atmospheric oxygen level and the evolution of insect body size. Proceedings of the Royal Society B: Biological Sciences 277, 1937–1946. doi:10.1098/rspb.2010.0001
+
+\bibitem{} \hangindent=1cm Heino, J., Schmera, D., Erős, T., 2013. A macroecological perspective of trait patterns in stream communities. Freshwater Biology 58, 1539–1555. doi:10.1111/fwb.12164
+
+\bibitem{} \hangindent=1cm Hering, D., Schmidt-Kloiber, A., Murphy, J., Lücke, S., Zamora-Muñoz, C., López-Rodríguez, M.J., Huber, T., Graf, W., 2009. Potential impact of climate change on aquatic insects: A sensitivity analysis for European caddisflies (Trichoptera) based on distribution patterns and ecological preferences. Aquatic Sciences 71, 3–14. doi:10.1007/s00027-009-9159-5
+
+\bibitem{} \hangindent=1cm Hershkovitz, Y., Dahm, V., Lorenz, A.W., Hering, D., 2015. A multi-trait approach for the identification and protection of European freshwater species that are potentially vulnerable to the impacts of climate change. Ecological Indicators 50, 150–160. doi:10.1016/j.ecolind.2014.10.023
+
+\bibitem{} \hangindent=1cm Hijmans, R.J., Van Etten, J., 2010. Raster: geographic analysis and modeling with raster data. R package version 2.1-66.
+
+\bibitem{} \hangindent=1cm Kotiaho, J.S., Kaitala, V., Komonen, A., Päivinen, J., 2005. Predicting the risk of extinction from shared ecological characteristics. Proceedings of the National Academy of Sciences of the United States of America 102, 1963–1967. doi:10.1073/pnas.0406718102
+
+\bibitem{} \hangindent=1cm Kriticos, D.J., Webber, B.L., Leriche, A., Ota, N., Macadam, I., Bathols, J., Scott, J.K., 2012. CliMond: global high-resolution historical and future scenario climate surfaces for bioclimatic modelling: CliMond: climate surfaces for bioclimatic modelling. Methods in Ecology and Evolution 3, 53–64. doi:10.1111/j.2041-210X.2011.00134.x
+
+\bibitem{} \hangindent=1cm Lancaster, J., Downes, B.J., 2010a. Linking the hydraulic world of individual organisms to ecological processes: Putting ecology into ecohydraulics. River Research and Applications 26, 385–403. doi:10.1002/rra.1274
+
+\bibitem{} \hangindent=1cm Lancaster, J., Downes, B.J., 2010b. Ecohydraulics needs to embrace ecology and sound science, and to avoid mathematical artefacts. River Research and Applications 26, 921–929. doi:10.1002/rra.1425
+
+\bibitem{} \hangindent=1cm Larsen, S., Ormerod, S.J., 2010. Combined effects of habitat modification on trait composition and species nestedness in river invertebrates. Biological Conservation 143, 2638–2646. doi:10.1016/j.biocon.2010.07.006
+
+\bibitem{} \hangindent=1cm Lawrence, J.E., Lunde, K.B., Mazor, R.D., Bêche, L.A., McElravy, E.P., Resh, V.H., 2010. Long-term macroinvertebrate responses to climate change: implications for biological assessment in mediterranean-climate streams. Journal of the North American Benthological Society 29, 1424–1440. doi:10.1899/09-178.1
+
+\bibitem{} \hangindent=1cm Legendre, P., Borcard, D., Peres-Neto, P.R., 2005. Analyzing beta diversity: partitioning the spatial variation of community composition data. Ecological Monographs 75, 435–450.
+
+\bibitem{} \hangindent=1cm Lewin-Koh, N.J., Bivand, R., Pebesma, E., Archer, E., Baddeley, A., Bibiko, H., Dray, S., Forrest, D., Friendly, M., Giraudoux, P., 2011. maptools: Tools for reading and handling spatial objects. R package version 0.8-27.
+
+\bibitem{} \hangindent=1cm Mlambo, M.C., 2014. Not all traits are “functional”: insights from taxonomy and biodiversity-ecosystem functioning research. Biodiversity and Conservation 23, 781–790. doi:10.1007/s10531-014-0618-5
+
+\bibitem{} \hangindent=1cm National Aeronautics and Space Administration (NASA), Japan’s Ministry of Economy, Trade and Industry (METI), 2009. ASTER Global Digital Elevation Map [WWW Document]. URL http://asterweb.jpl.nasa.gov/gdem.asp (accessed 12.18.13).
+
+\bibitem{} \hangindent=1cm Nishii, R., Tanaka, S., 2012. Modeling and inference of forest coverage ratio using zero-one inflated distributions with spatial dependence. Environmental and Ecological Statistics 20, 315–336. doi:10.1007/s10651-012-0227-y
+
+\bibitem{} \hangindent=1cm Oksanen, J., Kindt, R., Legendre, P., O’Hara, B., Stevens, M.H.H., Oksanen, M.J., Suggests, M., 2007. The vegan package. Community ecology package.
+Ospina, R., Ferrari, S.L., 2012. A general class of zero-or-one inflated beta regression models. Computational Statistics & Data Analysis 56, 1609–1623.
+
+\bibitem{} \hangindent=1cm Paradis, E., Claude, J., Strimmer, K., 2004. APE: Analyses of Phylogenetics and Evolution in R language. Bioinformatics 20, 289–290. doi:10.1093/bioinformatics/btg412
+
+\bibitem{} \hangindent=1cm Parmesan, C., Yohe, G., 2003. A globally coherent fingerprint of climate change impacts across natural systems. Nature 421, 37–42. doi:10.1111/j.1365-2486.2010.02370.x
+
+\bibitem{} \hangindent=1cm Peres-Neto, P.R., Legendre, P., 2010. Estimating and controlling for spatial structure in the study of ecological communities: Spatial structure in ecological communities. Global Ecology and Biogeography 19, 174–184. doi:10.1111/j.1466-8238.2009.00506.x
+
+\bibitem{} \hangindent=1cm Poff, N.L., Pyne, M.I., Bledsoe, B.P., Cuhaciyan, C.C., Carlisle, D.M., 2010. Developing linkages between species traits and multiscaled environmental variation to explore vulnerability of stream benthic communities to climate change. Journal of the North American Benthological Society 29, 1441–1458. doi:10.1899/10-030.1
+
+\bibitem{} \hangindent=1cm R Development Core Team, 2015. R: A language and environment for statistical computing. R Foundation for Statistical Computing. Vienna, Austria.
+Rigby, R.A., Stasinopoulos, D.M., 2005. Generalized additive models for location, scale and shape. Journal of the Royal Statistical Society: Series C (Applied Statistics) 54, 507–554.
+
+\bibitem{} \hangindent=1cm Rolauffs, P., Hering, D., Sommerhäuser, M., Jähnig, S., Rödiger, S., 2003. Entwicklung eines leitbildorientierten Saprobienindexes für die biologische Fließgewässerbewertung (No. 200 24 227), UBA-FB 000366. Umweltforschungsplan des Bundesministeriums für Umwelt, Naturschutz und Reaktorsicherheit, Essen.
+
+\bibitem{} \hangindent=1cm Sandin, L., Schmidt-Kloiber, A., Svenning, J.-C., Jeppesen, E., Friberg, N., 2014. A trait-based approach to assess climate change sensitivity of freshwater invertebrates across Swedish ecoregions. Current Zoology 60.
+
+\bibitem{} \hangindent=1cm Schmera, D., Podani, J., Erős, T., Heino, J., 2014. Combining taxon-by-trait and taxon-by-site matrices for analysing trait patterns of macroinvertebrate communities: a rejoinder to Monaghan &amp; Soares (). Freshwater Biology 59, 1551–1557. doi:10.1111/fwb.12369
+
+\bibitem{} \hangindent=1cm Schmera, D., Podani, J., Heino, J., Erős, T., Poff, N.L., 2015. A proposed unified terminology of species traits in stream ecology. Freshwater Science 000–000. doi:10.1086/681623
+
+\bibitem{} \hangindent=1cm Schmidt-Kloiber, A., Hering, D., 2015. www.freshwaterecology.info – An online tool that unifies, standardises and codifies more than 20,000 European freshwater organisms and their ecological preferences. Ecological Indicators 53, 271–282. doi:10.1016/j.ecolind.2015.02.007
+
+\bibitem{} \hangindent=1cm Schmidt-Kloiber, A., Nijboer, R.C., 2004. The effect of taxonomic resolution on the assessment of ecological water quality classes, in: Integrated Assessment of Running Waters in Europe. Springer, pp. 269–283.
+
+\bibitem{} \hangindent=1cm Stamp, J.D., Hamilton, A.T., Zheng, L., Bierwagen, B.G., 2010. Use of thermal preference metrics to examine state biomonitoring data for climate change effects. Journal of the North American Benthological Society 29, 1410–1423. doi:10.1899/10-003.1
+
+\bibitem{} \hangindent=1cm Statzner, B., Bêche, L.A., 2010. Can biological invertebrate traits resolve effects of multiple stressors on running water ecosystems? Freshwater Biology 55, 80–119. doi:10.1111/j.1365-2427.2009.02369.x
+
+\bibitem{} \hangindent=1cm Stocker, T.F., Dahe, Q., Plattner, G.-K., 2013. Climate Change 2013: The Physical Science Basis, Working Group I Contribution to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change. Summary for Policymakers. Intergovernmental Panel on Climate Change (IPCC).
+
+\bibitem{} \hangindent=1cm Tierno de Figueroa, J.M., López-Rodríguez, M.J., Lorenz, A., Graf, W., Schmidt-Kloiber, A., Hering, D., 2010. Vulnerable taxa of European Plecoptera (Insecta) in the context of climate change. Biodiversity and Conservation 19, 1269–1277. doi:10.1007/s10531-009-9753-9
+
+\bibitem{} \hangindent=1cm Usseglio-Polatera, P., Bournaud, M., Richoux, P., Tachet, H., 2000. Biomonitoring through biological traits of benthic macroinvertebrates: how to use species trait databases?, in: Assessing the Ecological Integrity of Running Waters. Springer, pp. 153–162.
+
+\bibitem{} \hangindent=1cm Vandewalle, M., Bello, F., Berg, M.P., Bolger, T., Dolédec, S., Dubs, F., Feld, C.K., Harrington, R., Harrison, P.A., Lavorel, S., Silva, P.M., Moretti, M., Niemelä, J., Santos, P., Sattler, T., Sousa, J.P., Sykes, M.T., Vanbergen, A.J., Woodcock, B.A., 2010. Functional traits as indicators of biodiversity response to land use changes across ecosystems and organisms. Biodiversity and Conservation 19, 2921–2947. doi:10.1007/s10531-010-9798-9
+
+\bibitem{} \hangindent=1cm Verberk, W.C.E.P., Atkinson, D., 2013. Why polar gigantism and Palaeozoic gigantism are not equivalent: effects of oxygen and temperature on the body size of ectotherms. Functional Ecology 27, 1275–1285. doi:10.1111/1365-2435.12152
+Verberk, W.C.E.P., Bilton, D.T., 2013. Respiratory control in aquatic insects dictates their vulnerability to global warming. Biology Letters 9, 20130473–20130473. doi:10.1098/rsbl.2013.0473
+
+\bibitem{} \hangindent=1cm Vorosmarty, C.J., 2000. Global Water Resources: Vulnerability from Climate Change and Population Growth. Science 289, 284–288. doi:10.1126/science.289.5477.284
+
+\bibitem{} \hangindent=1cm Vörösmarty, C.J., McIntyre, P.B., Gessner, M.O., Dudgeon, D., Prusevich, A., Green, P., Glidden, S., Bunn, S.E., Sullivan, C.A., Liermann, C.R., Davies, P.M., 2010. Global threats to human water security and river biodiversity. Nature 467, 555–561. doi:10.1038/nature09440
+
+\bibitem{} \hangindent=1cm Wikelski, M., Moskowitz, D., Adelman, J.S., Cochran, J., Wilcove, D.S., May, M.L., 2006. Simple rules guide dragonfly migration. Biology Letters 2, 325–329. doi:10.1098/rsbl.2006.0487
+
+\bibitem{} \hangindent=1cm Zeuss, D., Brandl, R., Brändle, M., Rahbek, C., Brunzel, S., 2014. Global warming favours light-coloured insects in Europe. Nature Communications 5. doi:10.1038/ncomms4874
+
+\end{thebibliography}
+
+\endgroup
+
+\openright

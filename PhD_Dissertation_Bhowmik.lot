@@ -1,0 +1,35 @@
+\select@language {english}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {table}{\numberline {1.1}{\ignorespaces Degradation of freshwater resources in different regions of the world by a single and confounding effects of natural and anthropogenic stressors.\relax }}{2}{table.caption.9}
+\addvspace {10pt}
+\contentsline {table}{\numberline {2.1}{\ignorespaces The results of number of digital elevation model (DEM)-derived stream cells ($n_{DS}$) optimization to obtain average lateral displacements ($d$) between mapped stream network (MSN) and DEM-derived stream network (DSN). The computed accumulation threshold (AT), $n_{DS}$ and the percentage high or low are the $n_{DS}$ from the number of mapped stream cells ($n_{MS}$), i.e. (($n_{DS}-n_{MS})/n_{MS}$) are reported with varying $d$s.\relax }}{29}{table.caption.19}
+\contentsline {table}{\numberline {2.2}{\ignorespaces The results of overlapped digital elevation model (DEM)-derived stream cells ($n_{DS(ov)}$) with buffered mapped stream cells optimization to select an accumulation threshold (AT). The percentages of overlapped DEM-derived stream cells ($n_{DS(ov)}/n_{DS}$) with varying ATs are reported.\relax }}{30}{table.caption.21}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Comparison of the goodness-of-fit of the ATRIC extracted stream networks from the digital elevation models (DEM) with the stream networks extracted by other algorithms for automated accumulation threshold selection.\relax }}{30}{table.caption.23}
+\addvspace {10pt}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Number of data points, smallest and largest spatial-lags, and summary statistics, i.e. minimum (Min.), mean, maximum (Max.) and coefficient of variation (CV) of annual total precipitation in hydrological wet days (PRCPTOT) within the pooled time series.\relax }}{48}{table.caption.31}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Precision statistics of the pooled within-time series (PTS) variograms estimated by spatially shifting temporal points (SSTP), averaging empirical variograms (AEV) and weighted averaging empirical variograms (WAEV) methods. The weighted mean of squared errors (WMSE) as the variogram model-fit statistic, and root means squared error (RMSE) and Nash-Sutcliffe efficiency (NSE) as the universal kriging interpolation performance statistics are presented.\relax }}{51}{table.caption.33}
+\addvspace {10pt}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Explained variances and spatial autocorrelation in the traits of each order and full data by the bioclimatic indices. The detailed information on the traits including the source databases and their occurrence and variability in Germany are presented. }}{68}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Explained variances and spatial autocorrelation by the individual bioclimatic indices in the traits and orders with the highest climate response and potential for changing distribution pattern. Details on the bioclimatic variables are extracted from Kriticos et al. (2012) and \href {https://www.climond.org/Resources.aspx}{https://www.climond.org/Resources.aspx}. }}{73}{table.4.2}
+\addvspace {10pt}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Calibrated geographically weighted regression (GWR) models and their spatial prediction quality for the concentration of trace metals in ground and surface water of unsampled districts. Corresponding corrected Akaike Information Criterion (AICc), kernel bandwith (size of the moving window), root mean square deviation error (RMSDE), index of agreement ($d$), mean (MZ) and standard deviation (SDZ) of the prediction z-scores are provided.\relax }}{89}{table.caption.46}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Estimated percentage of area and total population (million) at risk from trace metals in ground and surface water of Pakistan.\relax }}{97}{table.caption.52}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Number of available data points, data point density, smallest and largest spatial-lags, and minimum (min.), mean, maximum (max.) and coefficient of variation (CV) of annual total precipitation in hydrological wet days (PRCPTOT) in Bangladesh for each time step (year) within 1948-2007 series.}}{120}{table.B.1}
+\addvspace {10pt}
+\contentsline {table}{\numberline {C.1}{\ignorespaces Membership states of the five insect orders (\%) for the traits of each grouping feature. The membership state (\%) of an order for a trait was computed as the median of the membership states of all taxa in that order for that trait. The membership states were then scaled by the total of the membership states of an order for the traits of a grouping feature so that the membership states sum to 100 \% for each grouping feature.}}{134}{table.C.1}
+\contentsline {table}{\numberline {C.2}{\ignorespaces Spatial autocorrelations (Moran's I values) and gradients (Pearson correlations with longitude, latitude and altitude) for the bioclimatic indices (BIs) extracted at the stream sites. The Moran's I values and Pearson correlation coefficients are statistically significant at p<0.001. Details on the indices and their IDs and units can be found in Table 2 and \href {https://www.climond.org/Resources.aspx}{https://www.climond.org/Resources.aspx}.\relax }}{135}{table.caption.73}
+\contentsline {table}{\numberline {C.3}{\ignorespaces Spatial autocorrelations (global Moran's I) for abundance weighted traits in each stream macroinvertebrate order and in the full data. Observed Moran's I values are statistically significant at p<0.001.}}{136}{table.C.3}
+\contentsline {table}{\numberline {C.4}{\ignorespaces Relationship between the traits of temperature preference grouping feature and the traits of remaining grouping features in terms of explained variance (\%). The explained variances are the $R^2$s of the zero-or-one-inflated beta regression models fitted with the abundance weighted traits (AWT) of the temperature preference grouping feature as response and the AWT of the remaining grouping features separately as predictor variables.\relax }}{138}{table.caption.74}
+\addvspace {10pt}
+\contentsline {table}{\numberline {D.1}{\ignorespaces Observed concentration values (mg / l) of the trace metals in ground water samples from different districts of Pakistan during 1997-2014. The years of observed concentrations refer to the publication years of corresponding studies.\relax }}{153}{table.caption.89}
+\contentsline {table}{\numberline {D.2}{\ignorespaces Observed concentration values (mg / l) of the trace metals in surface water samples from different districts of Pakistan during 1991-2014. The years of observed concentrations refer to the publication years of corresponding studies.\relax }}{154}{table.caption.91}
+\addvspace {10pt}
+\addvspace {10pt}

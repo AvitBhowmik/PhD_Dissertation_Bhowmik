@@ -1,0 +1,252 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dissertation Thesis
+% Avit Kumar Bhowmik
+% XeLaTeX Template
+% Version 1.0 (22/12/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original authors:
+% Federico Maggi (fede@maggi.cc) with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+% Most of the document content and packages are specified within structure.tex
+% so if you need to make modifications to the template have a look there first!
+%
+% This template uses several fonts that are not available on most operating 
+% systems by default. These are: Adobe Caslon Pro, Envy Code R and 
+% Optima Regular. You will either need to obtain these and install them on your
+% system or change them to different fonts. Simply go to the Fonts block just
+% below here and modify their names to other fonts. You can also comment them 
+% out completely to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,showtrims,a4paper,twoside]{memoir} % Change font size here (allowable values are 9pt-12pt), change the paper size, specify one or two sided printing and specify whether to show trimming lines
+
+\input{structure.tex} % Include the file containing the code defining the structure and style of the document
+
+%------------------------------------------------
+% Thesis Information
+
+\title{\textbf{\Huge{Human and Ecological Impacts\\of Freshwater Degradation on Large Scales}}\\[.2cm]
+\LARGE Development and Integration of Spatial Models\\with Ecological Models for Spatial-ecological Analyses} % Thesis title
+
+\author{Avit Kumar Bhowmik} % Author name
+
+\date{Date of the oral examination: 2\textsuperscript{nd} December 2015} % The date
+
+\newcommand{\institution}{Universität Koblenz-Landau\xspace} % University/institution name
+
+\newcommand{\department}{Fachbereich 7: Natur- und Umweltwissenschaften\xspace} % Department name
+
+%------------------------------------------------
+% Fonts
+
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Ligatures={Common}]{Adobe Caslon Pro} % Normal document font
+\setmonofont[Scale=0.8]{Envy Code R} % Mono spaced font (\texttt{})
+\setsansfont[Scale=0.9]{Optima Regular} % Sans-serif font (\textsf{})
+
+\renewcommand*{\acffont}[1]{{\normalsize\itshape #1}} % Font style for the acronym text (e.g. Do It Yourself)
+\renewcommand*{\acfsfont}[1]{{\normalsize\upshape #1}} % Font style for the acronym in bracket (e.g. (DIY))
+
+%------------------------------------------------
+% Hyphenations
+
+\hyphenation{a-no-ma-lous a-no-ma-ly amounts breaches} % Specify custom hyphenation points in words with dashes where you would like hyphenation to occur, or alternatively, don't put any dashes in a word to stop hyphenation altogether
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+%\renewcommand{\maketitlehooka}{
+%\centering
+%\includegraphics[width=2.5cm]{Figures/polimi-logo}\\[.5cm] % Institution logo
+%DOTTORATO DI RICERCA IN INGEGNERIA DELL'INFORMAZIONE % Degree or other information
+%\par
+%\hrulefill
+%\vfill}
+\renewcommand{\maketitlehookb}{
+\centering
+\preauthor{by\\\LARGE\bfseries} % Text prior to the author name - right aligned and bold
+\postauthor{\\[.2cm] \normalfont\normalsize from Chittagong, Bangladesh} % After the author name, stop right alignment
+\vfill}
+
+\renewcommand{\maketitlehookc}{
+\vspace{50pt}
+\vfill
+\centering
+Accepted dissertation thesis for the partial fulfillment of the requirements for a \\[.2cm]
+Doctor of Natural Sciences\\
+\department\\% Print department name
+\institution\\ % Print institution name
+\vfill
+\vfill
+Thesis examiners:\\[.2cm]
+Professor Dr. Ralf B. Schäfer and Professor Dr. Ralf Schulz\\ % Advisor's/supervisor's name
+Universität Koblenz-Landau}
+
+
+%----------------------------------------------------------------------------------------
+
+\makeindex % Write an index file
+
+\begin{document}
+\begin{titlingpage}
+\maketitle % Print the title page
+\end{titlingpage}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+%----------------------------------------------------------------------------------------
+%	DECLARATION
+%----------------------------------------------------------------------------------------
+
+\include{declaration} 
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\include{acknowledgements} 
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY
+%----------------------------------------------------------------------------------------
+
+\include{summary} 
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\tableofcontents* % Print the table of contents
+
+%\cleartoverso % Force a break to an even page
+\openright
+
+%----------------------------------------------------------------------------------------
+%	ORIGINAL CONTRIBUTIONS
+%----------------------------------------------------------------------------------------
+
+\include{original_contributions} % Include a List of original contributions section using original_contributions.tex where they are defined
+
+%\cleartoverso % Force a break to an even page
+\newpage\null\thispagestyle{empty}\newpage % Force a break to an even page
+
+%----------------------------------------------------------------------------------------
+%	LIST OF FIGURES
+%----------------------------------------------------------------------------------------
+
+\listoffigures % Print the list of figures
+
+%\cleartoverso % Force a break to an even page
+\newpage
+\openright
+
+%----------------------------------------------------------------------------------------
+%	LIST OF TABLES
+%----------------------------------------------------------------------------------------
+
+\listoftables % Print the list of tables
+
+%\cleartoverso % Force a break to an even page
+\openright
+
+%----------------------------------------------------------------------------------------
+%	ACRONYMS
+%----------------------------------------------------------------------------------------
+
+\include{acronyms} % Include a List of Acronyms section using acronyms.tex where they are defined
+
+%\cleartoverso % Force a break to an even page
+\openright
+
+%----------------------------------------------------------------------------------------
+%	COLOPHON
+%----------------------------------------------------------------------------------------
+
+\thispagestyle{empty} % Remove all headers and footers from this page
+
+%\vspace*{2em}
+%\renewcommand{\abstractname}{Colophon}
+%\begin{abstract}
+%This document was typeset using the \textsf{XeTeX} typesetting system created by the Non-Roman Script Initiative and the memoir class created by Peter Wilson. The body text is set 10pt with~Adobe Caslon Pro. Other fonts include \texttt{Envy Code R}, \textsf{Optima Regular} and. Most of the drawings are typeset using the \textsf{TikZ/PGF} packages by Till Tantau.
+%\end{abstract}
+%\vfill
+
+%----------------------------------------------------------------------------------------
+%	CONTENT CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\chapterstyle{thesis} % Change the style of the Chapter header to that defined in structure.tex
+
+\pagestyle{Ruled} % Include the chapter/section in the header along with a horizontal rule underneath
+\makeevenhead{Ruled}{Chapter \thechapter}{}{Avit Kumar Bhowmik}
+
+\include{Chapters/chapter1} % Include the introduction chapter
+%\cleartoverso % Force a break to an even page
+\include{Chapters/chapter2} % Include the introduction chapter
+%\cleartoverso % Force a break to an even page
+\include{Chapters/chapter3} % Include the first content chapter
+%\cleartoverso % Force a break to an even page
+\include{Chapters/chapter4} % Include the second content chapter
+%\cleartoverso % Force a break to an even page
+\include{Chapters/chapter5} % Include the third content chapter
+%\cleartoverso % Force a break to an even page
+\include{Chapters/chapter6} % Include the third content chapter
+
+\chapterstyle{appendix} % Change the style of the Chapter header to that defined in structure.tex
+
+\pagestyle{Ruled} % Include the chapter/section in the header along with a horizontal rule underneath
+\makeevenhead{Ruled}{Appendix \thechapter}{}{Avit Kumar Bhowmik}
+
+\appendix
+
+\include{Chapters/appendixA} % Include the third content chapter
+\include{Chapters/appendixB} % Include the third content chapter
+\include{Chapters/appendixC} % Include the third content chapter
+\include{Chapters/appendixD} % Include the third content chapter
+
+\renewcommand{\addcontentsline}[3]{}
+
+\backmatter
+
+\chapterstyle{default} % Reset the chapter style back to the default used for non-content chapters
+
+\pagestyle{plain}
+
+\include{Chapters/author_contributions} % Include the third content chapter
+\include{Chapters/cv} % Include the third content chapter
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\bibliographystyle{plainnat} % Use the plainnat bibliography style
+
+%\bibliography{bibliography} % Use the bibliography.bib file as the source of references
+
+%----------------------------------------------------------------------------------------
+%	INDEX
+%----------------------------------------------------------------------------------------
+
+\printindex % Print the index
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

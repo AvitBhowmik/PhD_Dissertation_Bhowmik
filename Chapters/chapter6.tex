@@ -1,0 +1,207 @@
+\chapter{Major results and discussion}
+\label{chapter6}
+
+\section{Open-source and automated spatial tools for stressors quantification}
+\label{Open-source and automated spatial tools for stressors quantification}
+
+Spatial tools for stressors quantification need to be shared across national borders, disciplines, and administrative and system infrastructures for transboundary assessments of human and ecological impacts of freshwater degradation (EC, 2010; Rocchini and Neteler, 2012). Moreover, the results of stressors effects analyses should be reproducible to enable transparency, and a robust validation and implementation of freshwater restoration (EC, 2010). Large scale analyses also require an automation of catchment delineation processes as stressor effects need to be identified at enormous number of stream sampling points (SSP) and reaches (EC, 2013). Two spatial tools are outlined in this thesis that enable: (i) an objective and automatic selection of accumulation thresholds (AT) and delineation of catchments and upstream riparian corridors (URC) for given SSPs and reaches (chapter 2), and (ii) a robust estimation of pooled within-time series (PTS) variograms for varying number and location of spatial points in a time series to model spatial variability of drivers by filling data gaps (chapter 3). In contrast to the most available tools that were developed on proprietary software (Heine et al., 2004; Lin et al., 2006; Peterson et al., 2014), our tools were developed and integrated on freely available open-source software that ensure open-accessibility and thus foster transboundary freshwater management as well as complement the available proprietary tools used for stressors impact assessments (chapter 2 and 3). Our tool was also capable of automated URC delineation for more than 1000 SSPs (chapter 2). Moreover, we provide the detailed computation steps and example data for reproducibility of our results. Consequently, our tools enable widespread usage and thus improvement and rapidness in catchment and regional scale stressors quantifications (Pebesma et al., 2012).
+
+
+\subsection{Stream extraction in heterogenous and unmapped regions}
+\label{Stream extraction in heterogenous and unmapped regions}
+
+ATRIC, outlined in chapter 2, selects a constant AT for stream extraction in a region because the constant AT selection is commonly used and widely applied for hydrological and ecohydrological analyses (Gichamo et al., 2012; Lagacherie et al., 2010). However, the constant AT selection may not be appropriate for large regions with highly heterogeneous topography, i.e. combination of several mountainous and flat areas (Heine et al., 2004). Density and orders of streams considerably vary between mountainous and flat areas, and thus an AT appropriate for stream extraction in mountainous areas may not accurately extract stream networks in flat areas (Montgomery and Foufoula-Georgiou, 1993). Hence, to improve the goodness of stream extraction in heterogenous regions, a stratification into smaller homogenous regions based on terrain characteristics is essential (Afana and del Barrio, 2015). ATRIC can subsequently be applied for selection of constant ATs for stratified areas and thus variable ATs for a heterogeneous region.
+
+A large portion of world's stream networks remains unmapped (Lehner et al., 2008). As stream extraction by ATRIC primarily depends on the comparison with mapped stream networks (MSN), it cannot be directly applied for objective stream extraction and thus URC delineation in unmapped regions. However, objective extraction of stream networks from digital elevation models (DEM) in unmapped regions can be achieved in three alternative ways by using ATRIC:
+
+\begin{enumerate}[(i)]
+
+\item by employing an AT value selected by ATRIC for a mapped region, which is of identical size and terrain characteristics to the unmapped region,
+
+\item by predicting an AT for the unmapped region based on the correlation of ATs, which are selected by ATRIC for several mapped regions, with different regional geomorphological and climatological parameters, i.e. plane curvature and precipitation (Moore et al., 1991), and
+
+\item using supervised image classification on high resolution satellite imageries (Heine et al., 2004). The image classification can be supervised and validated using MSNs as well as the DEM-extracted stream networks by ATRIC in mapped regions.
+
+\end{enumerate}
+
+
+\subsection{Appropriate level of details of DEMs and MSNs for stream extraction}
+\label{Appropriate level of details of DEMs and MSNs for stream extraction}
+
+The level of details, i.e. spatial resolutions of DEMs and orders of provided MSNs, largely affects the goodness of automated stream network extraction and thus the catchment and URC delineation (McMaster, 2002; Murphy et al., 2008; Stanislawski et al., 2015). This is because the lateral displacement observed between DSN and MSN mainly vary with the resolution of provided DEMs, i.e. lateral displacement increases with a decreasing resolution (Peterson and Ver Hoef, 2014; Soille et al., 2003). Moreover, the resolution of DEM should comply with the order of provided MSN to adhere to the scale of studies (Goodchild and Gopal, 2003; Li and Wong, 2010; Murphy et al., 2008). For example, this thesis focuses on large scale (extent) studies, which generally extract high order and large streams, and aggregate stressors on large catchments (EC, 2010; Lorenz and Feld, 2013). For this purpose, a coarse resolution DEM, e.g. 25 – 100 m, should be sufficient (Tarboton, 2005). By contrast, small scale studies that require extraction of low order small streams with dense network and detailed information on stressors for small catchments (Dahm et al., 2013; Lorenz and Feld, 2013), would need a high resolution DEM, e.g. 1 – 10 m, derived by sophisticated instruments, e.g. LIDAR (Li and Wong, 2010). ATRIC automatically adjusts to the orders of provided MSNs and thus can be applied across spatial scales conditional that a DEM with appropriate resolution is provided (chapter 2).
+
+\subsection{Space-time integration for filling spatiotemporal data gaps}
+\label{Space-time integration for filling spatiotemporal data gaps}
+
+Data scarcity is one of the major obstacles for regional scale stressors quantifications, especially in developing countries (Malaj et al., 2014; Steffen et al., 2015). The SSTP method outlined in chapter 3 was applied to fill spatial data gaps by integrating temporal information, and thus to increase the precision of spatial variability modelling of precipitation by reducing uncertainties of short distant variability modelling and increasing number of paired comparisons. Similar approaches can be applied to fill temporal data gaps using spatial information, i.e. the prediction of time series using spatial data (Christakos, 2000). For example, precipitation time series unavailable for a meteorological station can be predicted using the time series in neighboring stations based on the spatial variability between stations (Borges et al., 2015). Nevertheless, space-time integration inherently requires integration of spatial and temporal autocorrelation structures by appropriate rescaling and weighting of spatiotemporal distances (Christakos, 2000; Gräler et al., 2011). Moreover, these integrations can be benefited from expert elicitations, i.e. \textit{a priori} information from experts on spatiotemporal variability, especially in regions with acute data scarcity (Truong et al., 2013). Furthermore, an extensive comparison and evaluation of the available spatiotemporal interpolation techniques is essential for identification of the most appropriate space-time integration technique for a region (Wu et al., 2015).
+
+\section{Trait-based prediction of freshwater degradation}
+\label{Trait-based prediction of freshwater degradation}
+
+Trait based approaches have shown considerable potential to identify large scale changes in assemblage patterns due to stressor effects, such as climate change, and thus to inform integrated freshwater management as well as to complement local scale managements (Bonada et al., 2007; Statzner and Bêche, 2010). In contrast to the previous studies that have only hypothesized certain traits to be vulnerable to climate change and used them to identify insect groups and stream sites potentially at risk from climate change on large scales (Conti et al., 2013; Hering et al., 2009; Sandin et al., 2014; Tierno de Figueroa et al., 2010), we empirically quantified the large scale relationships between aquatic insect assemblage traits and bioclimatic indices (BI) (chapter 4). Insects with very cold and cold temperature preferences exhibited the highest response to the BIs and highest potential for changing distribution patterns under climate change, respectively (chapter 4), which are in line with previous studies on climate change effects (Lawrence et al., 2010; Stamp et al., 2010). Aquatic insect groups Ephemeroptera and Plecoptera showed the highest response, while the ephemeropterans exhibited the highest potential for changing distribution patterns, which is also in line with Conti et al. (2013), Tierno de Figueroa et al. (2010) and Verberk and Atkinson (2013) (see chapter 4 for detailed discussion). Particularly, the ephemeropterans with very cold temperature preference and trichopterans with moderate temperature preference showed the highest response and potential for changing distribution, respectively (chapter 4). These results suggest to put emphasis on these most responsive traits and insect groups for future large scale risk analyses of climate change as well as for prioritizing trait-based monitoring.
+
+Trait-based prediction of freshwater degradation should particularly consider: (i) covariation and (ii) evolution of traits, because they may bias the prediction and make them partly uncertain (Lancaster and Downes, 2010a; 2010b; Verberk and Atkinson, 2013). For example, climate-response and potential for redistribution under future climate change observed in a trait may relate to its strong covariation with several other underlying climate-associated biological traits (Hering et al., 2009; Verberk and Atkinson, 2013). Insects with low dispersal capacity that have a restricted temperature niche, i.e. cold, and large-bodied insects that lack efficient respiration and show high ectotherm oxygen demand were shown to be affected by contractions of cold water streams (Domisch et al., 2011; Harrison et al., 2010; Lawrence et al., 2010; Tierno de Figueroa et al., 2010). Similarly, we observed a considerable and significant relationship between temperature preference trait with dispersal capacity, body size, reproductive capacity and resistance to drought of aquatic insects (chapter 4). Thus, studies that compute multiple trait-based indices for climate vulnerability assessments, e.g. Hershkovitz et al. (2015), may over-predict climate vulnerability of insects by considering trait as a single and constant state of organisms and summing up vulnerabilities of traits that exhibit covariation. On the other hand, traits may evolve in response to climate change and vary over the life cycles of organisms (Lancaster and Downes, 2010a, 2010b). For example, a decreasing body size (Daufresne et al., 2009) and color lightening (Zeuss et al., 2014) of aquatic insects has been reported in response to global warming. The evolution may also lead to trait convergence as a result of climate change on large scales (Finn and Poff, 2005; Horrigan and Baird, 2008). The evolution of traits may not be captured when considering them as stable in trait-based predictions, e.g. Conti et al., 2013. Hence, stressors may alter the trait distribution patterns on large scales, though organisms may adapt to stressors and ameliorate the ecological effects.
+
+\section{Large scale risk assessments}
+\label{Large scale risk assessments}
+
+Large scale risk assessments are important to identify areas for priority management and also to efficiently mobilize resources for small scale monitoring (Hugueny et al., 2010; Srinivasa and Govil, 2007). A nationwide human health risk assessment from trace metal contamination of ground and surface water in Pakistan is presented in chapter 5, which was conducted by predicting trace metal concentrations applying geographically weighted regression (GWR) and using relevant spatial predictors. The results demonstrate an alarming state of potential trace metal contamination of freshwater resources in Pakistan, i.e. more than 53 \% of the total area was predicted to be potentially at risk from multiple trace metal contamination, which are inhabited by more than 74 million people (chapter 5). Particularly, northern mountainous and southern coastal districts were predicted to be at higher risk than the central district and hence, these districts should be prioritized for remediation (chapter 5). Note that the risk assessment was conducted using the available drinking water guideline values (effect thresholds) that indicate risk from direct and regular consumption of contaminated water (WHO, 2011). Hence, the results are most relevant for the areas where people have the least access to water purification facilities and consequently regularly consume contaminated water. Moreover, levels of risks (e.g. chronic or acute) could not be established because of the lack for proper toxicity data and hence, only exceedances of thresholds were reported (chapter 5). A more robust risk assessment requires data on potential health impacts of trace metals at different levels of concentrations in drinking water.
+
+GWR model predictions of trace metal concentrations exhibited a high global accuracy and a low global uncertainty for most trace metals, despite a low global representativeness and low density of sampled data (see chapter 5 for details). The high accuracy and certainty in predictions were entailed by two complementary data filling approaches: (i) incorporation of local variability of trace metal concentrations in prediction models and thus predictions were predominantly made by the nearest neighboring samples (Harris et al., 2010), and (ii) in case that the neighboring samples were at large distances, i.e. $\geq$ 500 km, from prediction locations, predictions were predominantly made by using spatial predictors, generated from large scale secondary datasets, i.e. the DEM from Shuttle Radar Topography Mission (SRTM) (Rodriguez et al., 2005), Global Soil Properties datasets (Batjes, 2000) and landcover data from Global Map of Pakistan (ISCGM, 2014), based on their relationships with trace metal concentrations in sampled locations. Thus, complementing to spatial prediction methods (also outlined in chapter 3), the available large scale secondary datasets can be used to fill data gaps, e.g. the normalized vegetation index (NDVI) computed on satellite images and population density can be used to predict precipitation and anthropogenic inputs in data scarce regions, as precipitation and anthropogenic inputs show a positive relationship with NDVI and population density, respectively (Amini et al., 2008; Rogelis and Werner, 2013).
+
+\section{Outlook and concluding remarks}
+\label{Outlook and concluding remarks}
+
+This Ph.D. thesis is an attempt to provide accessible, reproducible and efficient spatial assessments of the magnitude, and human and ecological impacts of freshwater degradation on large scales, and thus to contribute to an integrated freshwater management. Spatial-ecological approaches for large scale freshwater degradation analyses are still constrained by many issues, which should be covered by future research. Stressor data scarcity is certainly one of them, not only for resource constraint developing countries but also globally for many relevant variables. For example, stream temperature data are substantially lacking and hence, air temperatures are used as surrogates (Domisch et al., 2013; Li et al., 2014). Data for organic chemicals have only recently been available for a few regions and hence, large scale risk assessments are lacking (Malaj et al., 2014). Besides the space-time integration, incorporation of local variability and usage of large scale secondary datasets as predictors,  crowd-sourced data evolved from citizen science have shown considerable potential to fill spatial data gaps (Dickinson et al., 2010). However, low quality standard and lack of a common data structure impede the usage of crowd-sourced data for the analyses of large scale freshwater degradation (Hochachka et al., 2012). Hence, future studies should develop appropriate quality standards and adaptable data structures to include crowd-sourced data in large scale human and ecological impact analyses. Coverage of spatial risk assessments from many stressors, especially from contaminants such as pesticides, is also lacking for many regions due to data scarcity and resource constraints, e.g. only 10\% of the major stream catchments are covered by risk assessments in south Asia (UNEP). Hence, considerable expansion is required in risk assessments as well as in water quality monitoring in developing regions by extensive mobilization of resources. In addition, a comprehensive and robust risk assessment from contaminants requires development of an exhaustive toxicity database based on laboratory and field experiments.
+
+Trait-based prediction provides a powerful tool for large scale assessment of freshwater degradation by future studies. One of the key questions that future studies should address is that if traits can be used to distinguish between the effects of different stressors. For this purpose, disentangling large scale responses of organismal traits to a single and multiple stressors is essential (Dray et al., 2012; Heino et al., 2007). Moreover, as traits are not stable (Lancaster and Downes, 2010a), potential adaptations of traits as a result of stressors effects should be taken into account and analyzed for longer time periods, i.e. through paleobiological studies. It should also be scrutinized whether trait convergence can be observed through emerging insects between aquatic and terrestrial ecosystems in response to stressors (Revenga et al., 2005). Complementarily, trait databases should be completed and expanded by including missing information on some important traits, e.g. dispersal capacity (Schmidt-Kloiber and Hering, 2012).
+
+Mitigation of freshwater degradation and restoration of good ecological status demand governance, institutional and economic responses across national borders as well as considerable resource mobilization (MEA, 2005). These involve the mediation of competing interests from relevant stakeholders acting at different spatial scales, and a transparent, accountable and evidence-based decision making (MEA, 2005; Steffen et al., 2015). Large scale assessments of human and ecological impacts of freshwater degradation applying an integrated spatial-ecological approach can provide necessary evidences for a transparent and accountable decision making process for freshwater management, not only on large scales but also on local scales (Steffen et al., 2015; Vörösmarty et al., 2010). For example, large scale risk assessments from stressors contribute to the development of early warnings at regional levels, which eventually underpin the regions that require a detailed assessment of degradation based on local monitoring (Steffen et al., 2015). Large scale inventories of endangered species and species-groups can provide support for the development of local scale preservation and protected areas (Vörösmarty et al., 2010). Moreover, large scale spatial approaches enable minimizing conflicts between stakeholders acting at local scales and bringing them together for an integrated decision making that entails large scale benefits (MEA, 2005). Notwithstanding, in addition to freshwater management and restorations, strict regulations for many sectors that directly and indirectly contribute to freshwater degradation are essential (MEA, 2005). Thus, elimination of environmentally harmful production subsidies, decreasing greenhouse gas emissions and nutrient loading, and correction of market failures are inevitable to ensure a safe operating space for global freshwater ecosystems as well as for dependent humans and ecological entities.
+
+\openleft
+
+\begingroup
+
+\renewcommand{\addcontentsline}[3]{}
+
+\begin{thebibliography}
+
+\bibitem{} \hangindent=1cm Afana, A., del Barrio, G., 2015. Insights on channel networks delineated from digital elevation models, in: Monitoring and Modelling Dynamic Environments. John Wiley & Sons, Ltd, pp. 225–245.
+
+\bibitem{} \hangindent=1cm Amini, M., Abbaspour, K.C., Berg, M., Winkel, L., Hug, S.J., Hoehn, E., Yang, H., Johnson, C.A., 2008. Statistical Modeling of Global Geogenic Arsenic Contamination in Groundwater. Environmental Science & Technology 42, 3669–3675. doi:10.1021/es702859e.
+
+\bibitem{} \hangindent=1cm Batjes, N.H., 2000. Global Data Set of Derived Soil Properties, 0.5-Degree Grid. International Soil Reference and Information Centre - World Inventory of Soil Emission Potentials (ISRIC- WISE).
+
+\bibitem{} \hangindent=1cm Bonada, N., DoléDec, S., Statzner, B., 2007. Taxonomic and biological trait differences of stream macroinvertebrate communities between mediterranean and temperate regions: implications for future climatic scenarios. Global Change Biology 13, 1658–1671. doi:10.1111/j.1365-2486.2007.01375.x.
+
+\bibitem{} \hangindent=1cm Borges, P. de A., Franke, J., da Anunciação, Y.M.T., Weiss, H., Bernhofer, C., 2015. Comparison of spatial interpolation methods for the estimation of precipitation distribution in Distrito Federal, Brazil. Theoretical and Applied Climatology. doi:10.1007/s00704-014-1359-9.
+
+\bibitem{} \hangindent=1cm Christakos, G., 2000. Modern spatiotemporal geostatistics. Courier Corporation.
+
+\bibitem{} \hangindent=1cm Conti, L., Schmidt-Kloiber, A., Grenouillet, G., Graf, W., 2013. A trait-based approach to assess the vulnerability of European aquatic insects to climate change. Hydrobiologia 721, 297–315. doi:10.1007/s10750-013-1690-7.
+
+\bibitem{} \hangindent=1cm Dahm, V., Hering, D., Nemitz, D., Graf, W., Schmidt-Kloiber, A., Leitner, P., Melcher, A., Feld, C.K., 2013. Effects of physico-chemistry, land use and hydromorphology on three riverine organism groups: a comparative analysis with monitoring data from Germany and Austria. Hydrobiologia 704, 389–415. doi:10.1007/s10750-012-1431-3.
+
+\bibitem{} \hangindent=1cm Dickinson, J.L., Zuckerberg, B., Bonter, D.N., 2010. Citizen Science as an Ecological Research Tool: Challenges and Benefits. Annual Review of Ecology, Evolution, and Systematics 41, 149–172. doi:10.1146/annurev-ecolsys-102209-144636.
+
+\bibitem{} \hangindent=1cm Daufresne, M., Lengfellner, K., Sommer, U., 2009. Global warming benefits the small in aquatic ecosystems. Proceedings of the National Academy of Sciences 106, 12788–12793. doi:10.1073/pnas.0902080106.
+
+\bibitem{} \hangindent=1cm Domisch, S., Araujo, M.B., Bonada, N., Pauls, S.U., Jahnig, S.C., Haase, P., 2013. Modelling distribution in European stream macroinvertebrates under future climates. Global Change Biology, 19, 752‒762.
+
+\bibitem{} \hangindent=1cm Domisch, S., Jähnig, S.C., Haase, P., 2011. Climate-change winners and losers: stream macroinvertebrates of a submontane region in Central Europe: Climate change effects on stream macroinvertebrates. Freshwater Biology 56, 2009–2020. doi:10.1111/j.1365-2427.2011.02631.x.
+
+\bibitem{} \hangindent=1cm Dray, S., Pélissier, R., Couteron, P., Fortin, M.-J., Legendre, P., Peres-Neto, P.R., Bellier, E., Bivand, R., Blanchet, F.G., De Cáceres, M., 2012. Community ecology in the age of multivariate multiscale spatial analysis. Ecological Monographs 82, 257–275. doi:10.1890/11-1183.1.
+
+\bibitem{} \hangindent=1cm European Commission (EC), 2013. A blueprint to safeguard Europe’s water resources, NAT.
+
+\bibitem{} \hangindent=1cm European Commission (EC), 2010. Water Framework Directive.
+
+\bibitem{} \hangindent=1cm Farooqi, A., Masuda, H., Siddiqui, R., Naseem, M., 2009. Sources of Arsenic and Fluoride in Highly Contaminated Soils Causing Groundwater Contamination in Punjab, Pakistan. Archives of Environmental Contamination and Toxicology 56, 693–706. doi:10.1007/s00244-008-9239-x.
+
+\bibitem{} \hangindent=1cm Finn, D.S., Leroy Poff, N., 2005. Variability and convergence in benthic communities along the longitudinal gradients of four physically similar Rocky Mountain streams: Longitudinal patterns in mountain streams. Freshwater Biology 50, 243–261. doi:10.1111/j.1365-2427.2004.01320.x.
+
+\bibitem{} \hangindent=1cm Gichamo, T.Z., Popescu, I., Jonoski, A., Solomatine, D., 2012. River cross-section extraction from the ASTER global DEM for flood modeling. Environmental Modelling & Software 31, 37–46. doi:10.1016/j.envsoft.2011.12.003.
+
+\bibitem{} \hangindent=1cm Goodchild, M.F., Gopal, S., 2003. The accuracy of spatial databases. CRC Press.
+
+\bibitem{} \hangindent=1cm Gräler, B., Gerharz, L.E., Pebesma, E., 2011. Spatio-temporal analysis and interpolation of PM10 measurements in Europe (Technical paper No. 2011/10). European Topic Center on Air Pollution and Climate Change Mitigation, Bilthoven.
+
+\bibitem{} \hangindent=1cm Harrison, J.F., Kaiser, A., VandenBrooks, J.M., 2010. Atmospheric oxygen level and the evolution of insect body size. Proceedings of the Royal Society B: Biological Sciences 277, 1937–1946. doi:10.1098/rspb.2010.0001.
+
+\bibitem{} \hangindent=1cm Harris, P., Fotheringham, A.S., Crespo, R., Charlton, M., 2010. The Use of Geographically Weighted Regression for Spatial Prediction: An Evaluation of Models Using Simulated Data Sets. Mathematical Geosciences 42, 657–680. doi:10.1007/s11004-010-9284-7.
+
+\bibitem{} \hangindent=1cm Heine, R.A., Lant, C.L., Sengupta, R.R., 2004. Development and Comparison of Approaches for Automated Mapping of Stream Channel Networks. Annals of the Association of American Geographers 94, 477–490. doi:10.1111/j.1467-8306.2004.00409.x.
+
+\bibitem{} \hangindent=1cm Heino, J., Mykrä, H., Kotanen, J., Muotka, T., 2007. Ecological filters and variability in stream macroinvertebrate communities: do taxonomic and functional structure follow the same path? Ecography 30, 217–230. doi:10.1111/j.2007.0906-7590.04894.x.
+
+\bibitem{} \hangindent=1cm Hering, D., Schmidt-Kloiber, A., Murphy, J., Lücke, S., Zamora-Muñoz, C., López-Rodríguez, M.J., Huber, T., Graf, W., 2009. Potential impact of climate change on aquatic insects: A sensitivity analysis for European caddisflies (Trichoptera) based on distribution patterns and ecological preferences. Aquatic Sciences 71, 3–14. doi:10.1007/s00027-009-9159-5.
+
+\bibitem{} \hangindent=1cm Hershkovitz, Y., Dahm, V., Lorenz, A.W., Hering, D., 2015. A multi-trait approach for the identification and protection of European freshwater species that are potentially vulnerable to the impacts of climate change. Ecological Indicators 50, 150–160. doi:10.1016/j.ecolind.2014.10.023.
+
+\bibitem{} \hangindent=1cm Hochachka, W.M., Fink, D., Hutchinson, R.A., Sheldon, D., Wong, W.-K., Kelling, S., 2012. Data-intensive science applied to broad-scale citizen science. Trends in Ecology & Evolution 27, 130–137. doi:10.1016/j.tree.2011.11.006.
+
+\bibitem{} \hangindent=1cm Horrigan, N., Baird, D.J., 2008. Trait patterns of aquatic insects across gradients of flow-related factors: a multivariate analysis of Canadian national data. Canadian Journal of Fisheries and Aquatic Sciences 65, 670–680.
+
+\bibitem{} \hangindent=1cm Hugueny, B., Oberdorff, T., Tedesco, P.A., 2010. Community ecology of river fishes: a large-scale perspective, in: American Fisheries Society Symposium. pp. 29–62.
+
+\bibitem{} \hangindent=1cm Lagacherie, P., Rabotin, M., Colin, F., Moussa, R., Voltz, M., 2010. Geo-MHYDAS: A landscape discretization tool for distributed hydrological modeling of cultivated areas. Computers & Geosciences 36, 1021–1032. doi:10.1016/j.cageo.2009.12.005.
+
+\bibitem{} \hangindent=1cm Lancaster, J., Downes, B.J., 2010a. Linking the hydraulic world of individual organisms to ecological processes: Putting ecology into ecohydraulics. River Research and Applications 26, 385–403. doi:10.1002/rra.1274.
+
+\bibitem{} \hangindent=1cm Lancaster, J., Downes, B.J., 2010b. Ecohydraulics needs to embrace ecology and sound science, and to avoid mathematical artefacts. River Research and Applications 26, 921–929. doi:10.1002/rra.1425.
+
+\bibitem{} \hangindent=1cm Lawrence, J.E., Lunde, K.B., Mazor, R.D., Bêche, L.A., McElravy, E.P., Resh, V.H., 2010. Long-term macroinvertebrate responses to climate change: implications for biological assessment in mediterranean-climate streams. Journal of the North American Benthological Society 29, 1424–1440. doi:10.1899/09-178.1.
+
+\bibitem{} \hangindent=1cm Lehner, B., Verdin, K., Jarvis, A., 2008. New global hydrography derived from spaceborne elevation data. EOS, Transactions American Geophysical Union 89, 93–94.
+
+\bibitem{} \hangindent=1cm Li, F., Kwon, Y.S., Bae, M.J., Chung, N., Kwon, T.S. & Park, Y.S., 2014. Potential impacts of global warming on the diversity and distribution of stream insects in South Korea. Conservation Biology, 28, 498–508.
+
+\bibitem{} \hangindent=1cm Li, J., Wong, D.W.S., 2010. Effects of DEM sources on hydrologic applications. Computers, Environment and Urban Systems 34, 251–261. doi:10.1016/j.compenvurbsys.2009.11.002.
+
+\bibitem{} \hangindent=1cm Lin, W.T., Chou, W.C., Lin, C.Y., Huang, P.H., Tsai, J.S., 2006. Automated suitable drainage network extraction from digital elevation models in Taiwan’s upstream watersheds. Hydrological Processes 20, 289–306. doi:10.1002/hyp.5911.
+
+\bibitem{} \hangindent=1cm Lorenz, A.W., Feld, C.K., 2013. Upstream river morphology and riparian land use overrule local restoration effects on ecological status assessment. Hydrobiologia 704, 489–501. doi:10.1007/s10750-012-1326-3.
+
+\bibitem{} \hangindent=1cm Malaj, E., Peter, C., Grote, M., Kühne, R., Mondy, C.P., Usseglio-Polatera, P., Brack, W., Schäfer, R.B., 2014. Organic chemicals jeopardize the health of freshwater ecosystems on the conti- nental scale. Proceedings of the National Academy of Sciences 201321082.
+
+\bibitem{} \hangindent=1cm McMaster, K.J., 2002. Effects of digital elevation model resolution on derived stream network positions. Water Resources Research 38, 13–1–13–8. doi:10.1029/2000WR000150.
+
+\bibitem{} \hangindent=1cm Millennium Ecosystem Assessment (MEA), 2005. Ecosystems and human well-being: wetlands and water (Synthesis). World Resources Institute, Washington, D.C.
+
+\bibitem{} \hangindent=1cm Montgomery, D.R., Foufoula-Georgiou, E., 1993. Channel network source representation using digital elevation models. Water Resources Research 29, 3925–3934. doi:10.1029/93WR02463.
+
+\bibitem{} \hangindent=1cm Moore, I.D., Grayson, R.B., Ladson, A.R., 1991. Digital terrain modelling: A review of hydrological, geomorphological, and biological applications. Hydrological Processes 5, 3–30. doi:10.1002/hyp.3360050103.
+
+\bibitem{} \hangindent=1cm Murphy, P.N.C., Ogilvie, J., Meng, F.-R., Arp, P., 2008. Stream network modelling using lidar and photogrammetric digital elevation models: a comparison and field verification. Hydrological Processes 22, 1747–1754. doi:10.1002/hyp.6770.
+
+\bibitem{} \hangindent=1cm Pebesma, E., Nüst, D., Bivand, R., 2012. The R software environment in reproducible geoscientific research. Eos, Transactions American Geophysical Union 93, 163–163.
+
+\bibitem{} \hangindent=1cm Peterson, E.E., Ver Hoef, J.M., 2014. STARS: An ArcGIS Toolset Used to Calculate the Spatial Information Needed to Fit Spatial Statistical Models to Stream Network Data. Journal of Statistical Software 56.
+
+\bibitem{} \hangindent=1cm Revenga, C., Campbell, I., Abell, R., de Villiers, P., Bryer, M., 2005. Prospects for monitoring freshwater ecosystems towards the 2010 targets. Philosophical Transactions of the Royal Society B: Biological Sciences 360, 397–413. doi:10.1098/rstb.2004.1595.
+
+\bibitem{} \hangindent=1cm Rocchini, D., Neteler, M., 2012. Let the four freedoms paradigm apply to ecology. Trends in ecology & evolution 27, 310–311.
+
+\bibitem{} \hangindent=1cm Rodriguez, E., Morris, C.S., Belz, J.E., Chapin, E.C., Martin, J.M., Daffer, M., Hensley, S., 2005. An assessment of the SRTM topographic products. Technical Report JPL D-31639, 143. Jet Propulsion Laboratory, Pasadena, California.
+
+\bibitem{} \hangindent=1cm Rogelis, M., Werner, M., 2013. Spatial interpolation for real-time rainfall field estimation in areas with complex topography. Journal of Hydrometeorology 14, 85–104.
+
+\bibitem{} \hangindent=1cm Sandin, L., Schmidt-Kloiber, A., Svenning, J.-C., Jeppesen, E., Friberg, N., 2014. A trait-based approach to assess climate change sensitivity of freshwater invertebrates across Swedish ecoregions. Current Zoology 60.
+
+\bibitem{} \hangindent=1cm Schmidt-Kloiber, A., Hering, D., 2012. The taxa and autecology database for freshwater organisms, version 5.0 [WWW Document]. URL http://www.freshwaterecology.info/ (accessed 2.10.14).
+
+\bibitem{} \hangindent=1cm Soille, P., Vogt, J., Colombo, R., 2003. Carving and adaptive drainage enforcement of grid digital elevation models. Water Resources Research 39, 1366. doi:10.1029/2002WR001879.
+
+\bibitem{} \hangindent=1cm Srinivasa, S.G., Govil, P.K., 2007. Distribution of heavy metals in surface water of Ranipet industrial area in Tamil Nadu, India. Environmental Monitoring and Assessment 136, 197–207. doi:10.1007/s10661-007-9675-5.
+
+\bibitem{} \hangindent=1cm Stamp, J.D., Hamilton, A.T., Zheng, L., Bierwagen, B.G., 2010. Use of thermal preference metrics to examine state biomonitoring data for climate change effects. Journal of the North American Benthological Society 29, 1410–1423. doi:10.1899/10-003.1.
+
+\bibitem{} \hangindent=1cm Stanislawski, L.V., Buttenfield, B.P., Doumbouya, A., 2015. A rapid approach for automated comparison of independently derived stream networks. Cartography and Geographic Information Science 1–14. doi:10.1080/15230406.2015.1060869.
+
+\bibitem{} \hangindent=1cm Statzner, B., Bêche, L.A., 2010. Can biological invertebrate traits resolve effects of multiple stressors on running water ecosystems? Freshwater Biology 55, 80–119. doi:10.1111/j.1365-2427.2009.02369.x.
+
+\bibitem{} \hangindent=1cm Steffen, W., Richardson, K., Rockstrom, J., Cornell, S.E., Fetzer, I., Bennett, E.M., Biggs, R., Carpenter, S.R., de Vries, W., de Wit, C.A., Folke, C., Gerten, D., Heinke, J., Mace, G.M., Persson, L.M., Ramanathan, V., Reyers, B., Sorlin, S., 2015. Planetary boundaries: Guiding human development on a changing planet. Science 347, 1259855–1259855. doi:10.1126/science.1259855.
+
+\bibitem{} \hangindent=1cm Tarboton, D.G., 2005. Terrain analysis using digital elevation models (TauDEM). Utah State University, Logan.
+
+\bibitem{} \hangindent=1cm Tierno de Figueroa, J.M., López-Rodríguez, M.J., Lorenz, A., Graf, W., Schmidt-Kloiber, A., Hering, D., 2010. Vulnerable taxa of European Plecoptera (Insecta) in the context of climate change. Biodiversity and Conservation 19, 1269–1277. doi:10.1007/s10531-009-9753-9.
+
+\bibitem{} \hangindent=1cm Truong, P.N., Heuvelink, G.B.M., Gosling, J.P., 2013. Web-based tool for expert elicitation of the variogram. Computers & Geosciences 51, 390–399. doi:10.1016/j.cageo.2012.08.010.
+
+\bibitem{} \hangindent=1cm United Nations Environment Programme (UNEP), 2008. Freshwater Under Threat. South Asia. Vulnerability Assessment of Freshwater Resources to Envrionmental Change. Kenya.
+
+\bibitem{} \hangindent=1cm Verberk, W.C.E.P., Atkinson, D., 2013. Why polar gigantism and Palaeozoic gigantism are not equivalent: effects of oxygen and temperature on the body size of ectotherms. Functional Ecology 27, 1275–1285. doi:10.1111/1365-2435.12152.
+
+\bibitem{} \hangindent=1cm Vörösmarty, C.J., McIntyre, P.B., Gessner, M.O., Dudgeon, D., Prusevich, A., Green, P., Glidden, S., Bunn, S.E., Sullivan, C.A., Liermann, C.R., Davies, P.M., 2010. Global threats to human water security and river biodiversity. Nature 467, 555–561. doi:10.1038/nature09440.
+
+\bibitem{} \hangindent=1cm World Health Organization, 2011. Guidelines for drinking-water quality. World Health Organi- zation, Geneva.
+
+\bibitem{} \hangindent=1cm Wu, W., Tang, X.-P., Ma, X.-Q., Liu, H.-B., 2015. A comparison of spatial interpolation methods for soil temperature over a complex topographical region. Theoretical and Applied Climatology. doi:10.1007/s00704-015-1531-x.
+
+\bibitem{} \hangindent=1cm Zeuss, D., Brandl, R., Brändle, M., Rahbek, C., Brunzel, S., 2014. Global warming favours light-coloured insects in Europe. Nature Communications 5. doi:10.1038/ncomms4874
+
+\end{thebibliography}
+
+\endgroup
+
+\openright

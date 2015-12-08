@@ -1,0 +1,107 @@
+\select@language {english}
+\contentsline {chapter}{Declaration}{i}{chapter*.1}
+\contentsline {chapter}{Acknowledgements}{iii}{chapter*.2}
+\contentsline {chapter}{Summary}{v}{chapter*.3}
+\contentsline {chapter}{Original Contributions}{xi}{chapter*.4}
+\contentsline {chapter}{List of Figures}{xiii}{section*.5}
+\contentsline {chapter}{List of Tables}{xvii}{section*.6}
+\contentsline {chapter}{List of Acronyms}{xix}{chapter*.7}
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Freshwater degradation on large scales}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Spatial models for freshwater ecological analyses}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Catchment and regional scale stressors quantification}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}Large scale spatial relationship between biological quality elements and drivers}{7}{section.1.4}
+\contentsline {section}{\numberline {1.5}Large scale human and ecological risk assessment}{8}{section.1.5}
+\contentsline {section}{\numberline {1.6}Aims and objectives}{8}{section.1.6}
+\contentsline {chapter}{\chapternumberline {2}An automated, objective and open source tool for stream threshold selection and upstream riparian corridor delineation}{19}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{21}{section.2.1}
+\contentsline {section}{\numberline {2.2}Materials and Methods}{22}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Data and software}{22}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Automated accumulation threshold selection}{24}{subsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Flow accumulation raster computation}{24}{subsubsection.2.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Mapped single segment node identification}{24}{subsubsection.2.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.3}Lateral displacement selection}{24}{subsubsection.2.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.2.4}Overlap optimization between mapped and DEM-derived streams}{26}{subsubsection.2.2.2.4}
+\contentsline {subsection}{\numberline {2.2.3}Automated upstream riparian corridor delineation}{27}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Comparison with other algorithms}{27}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Results and Discussion}{27}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Automated accumulation threshold and spatial scale}{27}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Goodness of stream network extraction from digital elevation models}{29}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Computational efficiency}{32}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Development and integration}{32}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Potential fields of application}{32}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Conclusions and outlook}{33}{section.2.4}
+\contentsline {chapter}{\chapternumberline {3}Spatially shifting temporal points: estimating pooled within-time series variograms for scarce hydrological data}{39}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{41}{section.3.1}
+\contentsline {section}{\numberline {3.2}Methods}{42}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Spatial structure and stationarity tests}{42}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Computation of pooled within-time series (PTS) empirical variograms}{43}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Spatially shifting temporal points (SSTP)}{43}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Averaging empirical variograms (AEV)}{45}{subsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.3}Weighted averaging empirical variograms (WAEV)}{45}{subsubsection.3.2.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Test for anisotropy}{45}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Estimation and precision of PTS variograms}{45}{subsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.4.1}Variogram model-fit}{46}{subsubsection.3.2.4.1}
+\contentsline {subsubsection}{\numberline {3.2.4.2}Kriging interpolation and performance statistics}{46}{subsubsection.3.2.4.2}
+\contentsline {section}{\numberline {3.3}Study area and data}{47}{section.3.3}
+\contentsline {section}{\numberline {3.4}Results}{47}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Spatial structure and stationarity}{47}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Pooled within-time series (PTS) empirical variograms}{48}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}Spatial shifts}{48}{subsubsection.3.4.2.1}
+\contentsline {subsubsection}{\numberline {3.4.2.2}Empirical variograms}{49}{subsubsection.3.4.2.2}
+\contentsline {subsubsection}{\numberline {3.4.2.3}Data density and short distance variabiity}{50}{subsubsection.3.4.2.3}
+\contentsline {subsubsection}{\numberline {3.4.2.4}Anisotropy}{50}{subsubsection.3.4.2.4}
+\contentsline {subsection}{\numberline {3.4.3}Precision of variogram estimation}{50}{subsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.3.1}Variogram model-fit}{50}{subsubsection.3.4.3.1}
+\contentsline {subsubsection}{\numberline {3.4.3.2}Kriging interpolation performance}{51}{subsubsection.3.4.3.2}
+\contentsline {subsection}{\numberline {3.4.4}Discussion and future research challenges}{51}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Conclusions}{56}{subsection.3.4.5}
+\contentsline {chapter}{\chapternumberline {4}Large scale relationship between aquatic insect traits and climate}{61}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{63}{section.4.1}
+\contentsline {section}{\numberline {4.2}Materials and methods}{64}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Concepts of scale}{64}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Data and processing}{64}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Aquatic insect data}{64}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}Biological and ecological traits data}{66}{subsubsection.4.2.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.3}Calculation of assemblage trait composition}{66}{subsubsection.4.2.2.3}
+\contentsline {subsubsection}{\numberline {4.2.2.4}Bioclimatic indices and altitude data}{66}{subsubsection.4.2.2.4}
+\contentsline {subsubsection}{\numberline {4.2.2.5}Pre-processing of BI and AWT data}{72}{subsubsection.4.2.2.5}
+\contentsline {subsection}{\numberline {4.2.3}Analyses of the spatial relationship between traits and climate}{72}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Results and Discussion}{74}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Which of the climate-associated traits and organism groups show the highest response to climate and highest potential for changing distribution pattern under future climate change?}{74}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Which of the climatic aspects show the strongest relationship with the traits and organism groups showing the highest response and potential for redistribution?}{77}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Concluding remarks}{77}{subsection.4.3.3}
+\contentsline {chapter}{\chapternumberline {5}Mapping human health risks from exposure to trace metal contamination of drinking water sources in Pakistan}{83}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{85}{section.5.1}
+\contentsline {section}{\numberline {5.2}Materials and methods}{86}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Study area}{86}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Data compilation and processing}{86}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Spatial prediction of trace metal concentrations in ground and surface water}{88}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}GWR model validation}{88}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}GWR prediction uncertainties}{90}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}Risk prediction}{90}{subsection.5.2.6}
+\contentsline {subsection}{\numberline {5.2.7}Risk prediction uncertainties}{91}{subsection.5.2.7}
+\contentsline {section}{\numberline {5.3}Results and Discussion}{93}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}GWR prediction of trace metal concentration in ground and surface water}{93}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Human health risk from trace metals}{96}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Risk management}{98}{subsection.5.3.3}
+\contentsline {chapter}{\chapternumberline {6}Major results and discussion}{103}{chapter.6}
+\contentsline {section}{\numberline {6.1}Open-source and automated spatial tools for stressors quantification}{103}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Stream extraction in heterogenous and unmapped regions}{103}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Appropriate level of details of DEMs and MSNs for stream extraction}{104}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Space-time integration for filling spatiotemporal data gaps}{104}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Trait-based prediction of freshwater degradation}{104}{section.6.2}
+\contentsline {section}{\numberline {6.3}Large scale risk assessments}{105}{section.6.3}
+\contentsline {section}{\numberline {6.4}Outlook and concluding remarks}{106}{section.6.4}
+\contentsline {appendix}{\chapternumberline {A}Supplementary materials for:\\An automated, objective and open source tool for stream threshold selection and upstream riparian corridor delineation}{113}{appendix.A}
+\contentsline {section}{\numberline {A.1}Supplementary computer code and data}{113}{section.A.1}
+\contentsline {section}{\numberline {A.2}Supplementary figures}{114}{section.A.2}
+\contentsline {appendix}{\chapternumberline {B}Supplementary materials for:\\Spatially shifting temporal points: estimating pooled within-time series variograms for scarce hydrological data}{117}{appendix.B}
+\contentsline {section}{\numberline {B.1}Supplementary computer code and data}{117}{section.B.1}
+\contentsline {section}{\numberline {B.2}Supplementary figure and table}{117}{section.B.2}
+\contentsline {appendix}{\chapternumberline {C}Supplementary materials for:\\Large scale relationship between aquatic insect traits and climate}{123}{appendix.C}
+\contentsline {section}{\numberline {C.1}Supplementary figures}{123}{section.C.1}
+\contentsline {section}{\numberline {C.2}Supplementary tables}{134}{section.C.2}
+\contentsline {appendix}{\chapternumberline {D}Supplementary materials for:\\Mapping human health risks from exposure to trace metal contamination of drinking water sources in Pakistan}{139}{appendix.D}
+\contentsline {section}{\numberline {D.1}Supplementary figures}{139}{section.D.1}
+\contentsline {section}{\numberline {D.2}Supplementary tables}{152}{section.D.2}
